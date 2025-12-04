@@ -1,0 +1,70 @@
+up_mapping_keys = [
+    "bill_modify_date", "bill_modify_time", "bill_refference_date",
+    "bill_refference_no", "bill_remarks2", "bill_total_trade_addition",
+    "bill_total_trade_deduction", "billed_at_GSTN_no", "billed_at_PAN_no",
+    "billed_at_addressline2", "billed_at_addressline3", "billed_at_branch_name",
+    "billed_at_city", "billed_at_company_name", "billed_at_phone_no1",
+    "billed_at_phone_no2", "billed_at_pincode", "billed_at_state",
+    "billed_at_state_code", "customer_GSTN_no", "customer_PAN_no",
+    "customer_addressline2", "customer_addressline3", "customer_phone_no2",
+    "customer_pincode", "customer_state", "customer_state_code",
+    "delivery_from_GSTN_no", "delivery_from_PAN_no",
+    "delivery_from_addressline2", "delivery_from_addressline3",
+    "delivery_from_branch_name", "delivery_from_branch_store_code",
+    "delivery_from_city", "delivery_from_company_name",
+    "delivery_from_phone_no1", "delivery_from_phone_no2",
+    "delivery_from_state", "delivery_from_state_code", "delivery_to_GSTN_no",
+    "delivery_to_Name", "delivery_to_PAN_no", "delivery_to_addressline1",
+    "delivery_to_addressline2", "delivery_to_addressline3", "delivery_to_city",
+    "delivery_to_phone_no1", "delivery_to_phone_no2", "delivery_to_pincode",
+    "delivery_to_state", "delivery_to_state_code", "item_brand_name",
+    "item_cgst", "item_cgst_perc", "item_gross_rate", "item_igst",
+    "item_igst_perc", "item_name", "item_product_name", "item_sgst",
+    "item_sgst_perc", "item_sno", "item_taxable_Amount",
+    "bill_cancel_amount__c", "bill_cancel_date__c", "bill_cancel_time__c",
+    "Bill_Date__c", "bill_grand_total__c", "Bill_No__c",
+    "bill_remarks1__c", "bill_status__c", "bill_tender_type__c",
+    "bill_time__c", "bill_transaction_type__c", "customer_area__c",
+    "customer_city__c", "Customer_Code_New", "Customer_Code__c_new",
+    "Customer_Code__c", "customer_doa__c", "customer_dob__c",
+    "customer_email__c", "customer_fname__c", "customer_gender__c",
+    "customer_lname__c", "customer_mobile__c", "customer_mobile__c_backup",
+    "customer_mobile__c2", "item_category_name__c", "Item_Code__c",
+    "item_gross_amount__c", "item_net_amount__c", "item_quantity__c",
+    "item_remarks1__c", "item_remarks2__c", "item_status__c",
+    "item_tax__c", "store_code__c"
+]
+
+missing_keys = ['pri_id', 'tid', 'Id', 'OwnerId', 'IsDeleted', 'Name',
+                'CreatedDate', 'CreatedById', 'LastModifiedDate', 'LastModifiedById',
+                'SystemModstamp', 'LastActivityDate', 'Branch_Name__c', 'Contact__c',
+                'Customer_Number__c', 'Customer__c', 'Invoice_Amount__c', 'Invoice_Date__c',
+                'customerId', 'Customer_Last_Name__c', 'Customer_Name__c', 'Deptid',
+                'billed_at_address', 'billed_at_VAT_no', 'delivery_from_address',
+                'delivery_from_VAT_no', 'Email__c', 'IMEINumber__c', 'Item_Brand_Name__c',
+                'Item_Group_Name__c', 'Item_Name__c', 'Item_Rate__c', 'Item_Remarks__c',
+                'Location__c', 'Product__c', 'Products__c', 'PurchasedDate__c', 'Service_Center__c',
+                'Showroom__c', 'Showroom_code__c', 'Status__c', 'bill_cancel_against__c',
+                'bill_cancel_amount', 'bill_cancel_reason__c', 'bill_discount__c', 'bill_discount_per__c',
+                'bill_gross_amount__c', 'bill_modify__c', 'bill_modify_datetime__c', 'bill_modify_reason__c',
+                'bill_net_amount__c', 'bill_remarks3__c', 'bill_remarks4__c', 'bill_remarks5__c',
+                'bill_round_off_amount__c', 'bill_service_tax__c', 'bill_tax__c', 'bill_transaction_no__c',
+                'bill_type__c', 'customer_address__c', 'customer_remarks1__c', 'customer_remarks2__c',
+                'customer_remarks3__c', 'customer_remarks4__c', 'customer_remarks5__c', 'customer_state__c',
+                'ext_param1__c', 'ext_param2__c', 'ext_param3__c', 'ext_param4__c', 'ext_param5__c',
+                'item_barcode__c', 'item_brand_code__c', 'item_category_code__c', 'item_color_code__c',
+                'item_color_name__c', 'item_department_code__c', 'item_department_name__c',
+                'item_discount__c', 'item_discount_per__c', 'item_group__c', 'item_remarks3__c',
+                'item_remarks4__c', 'item_remarks5__c', 'item_serial_no__c', 'item_service_tax__c',
+                'item_size_code__c', 'item_size_name__c', 'item_sub_category_code__c',
+                'item_sub_category_name__c', 'voucher_code__c', 'voucher_type__c', 'voucher_value__c',
+                'Docid__c', 'Customer_Address_New__c', 'updated_At', 'cusId_error', 'bill_remarks2__c',
+                'Bill_Grant_Total__c', 'ageOfDevice', 'emp_id', 'emp_name']
+
+print(len(up_mapping_keys))
+print(len(missing_keys))
+
+total_keys = set()
+
+total = up_mapping_keys + missing_keys
+print(len(total))

@@ -1,4 +1,4 @@
-import os
+import os, logging
 from logging.config import dictConfig
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -74,3 +74,6 @@ LOGGING = {
 }
 
 dictConfig(LOGGING)
+
+success_log = logging.getLogger("success_logger")
+error_log = logging.getLogger("error_logger")

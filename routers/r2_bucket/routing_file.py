@@ -1,7 +1,7 @@
 from fastapi import Query
 from fastapi import APIRouter
 from core.creds import MysqlCatalog
-from logs import success_log, error_log
+from logs.log_settings import success_log, error_log
 from routers.r2_bucket.get_functions import *
 from concurrent.futures import ProcessPoolExecutor
 from routers.r2_bucket.create_functions import process_invoice

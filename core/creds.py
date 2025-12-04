@@ -1,6 +1,4 @@
-import os
-import boto3
-import logging
+import os, boto3
 import mysql.connector
 from pathlib import Path
 from dotenv import load_dotenv
@@ -8,12 +6,11 @@ from mysql.connector import Error
 from fastapi import HTTPException
 from botocore.client import Config
 from pyiceberg.catalog.rest import RestCatalog
+from logs.log_settings import success_log, error_log
 
 env_path = Path(__file__).resolve().parent / ".env"
-
 load_dotenv(dotenv_path=env_path)
 
-logger = logging.getLogger("r2_migrtaion")
 
 def cat_client():
     cat_name = os.getenv("CATALOG_NAME")
@@ -21,13 +18,13 @@ def cat_client():
     cat_uri = os.getenv("CATALOG_URI")
     cat_token = os.getenv("TOKEN")
 
-    print(f"cat_name : {cat_name}\nwarehouse : {warehouse}\ncat_uri : {cat_uri}\ncat_token : {cat_token}")
+    # success_log.info(f"cat_name : {cat_name}\nwarehouse : {warehouse}\ncat_uri : {cat_uri}\ncat_token : {cat_token}")
 
     try:
         response = RestCatalog(name=cat_name, warehouse=warehouse, uri=cat_uri, token=cat_token)
         print(response)
     except Exception as e:
-        logger.error(f"❌ Failed to initialize Iceberg catalog client: {e}")
+        error_log.error(f"❌ Failed to initialize Iceberg catalog client: {e}")
         raise HTTPException(status_code=500, detail=f"Cloudflare R2 client 1 initialization failed: {e}")
 
 def r2_client():
@@ -40,7 +37,7 @@ def r2_client():
                             aws_secret_access_key=secret_key,
                             config=Config(signature_version="s3v4"), region_name="auto")
     except Exception as e:
-        logger.error(f"❌ Failed to initialize R2 client: {e}")
+        error_log.error(f"❌ Failed to initialize R2 client: {e}")
         raise HTTPException(status_code=500, detail="Cloudflare R2 client 2 initialization failed")
 
 ALLOWED_TABLES = ["Transaction", "employees","POS_Transactions"]
@@ -51,10 +48,10 @@ def mysql_connect():
                                        password=os.getenv("PASSWORD"),
                                        database=os.getenv("DATABASE"), port=3306)
         if conn.is_connected():
-            logger.info("✅ MySQL connection established")
+            success_log.info("✅ MySQL connection established")
             return conn
     except Error as e:
-        logger.error(f"❌ Error connecting to MySQL: {e}")
+        error_log.error(f"❌ Error connecting to MySQL: {e}")
     return None
 
 class MysqlCatalog:

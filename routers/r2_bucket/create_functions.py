@@ -3,7 +3,7 @@ from typing import Dict, Any
 from decimal import Decimal
 from core.creds import r2_client
 from datetime import datetime, date
-from logs import error_log, success_log
+from logs.log_settings import error_log, success_log
 
 
 def process_invoice(row: Dict[str, Any], mob_bucket: str, imei_bucket: str, mob_prefix: str, imei_prefix: str):
@@ -68,7 +68,7 @@ def store_json_data(bucket, data, key, metadata):
         else:
             raise TypeError(f"Unsupported data type for R2 upload: {type(data)}")
     except (TypeError, ValueError) as e:
-        logger.error(f"❌ JSON serialization failed for key {key}: {e}")
+        error_log.error(f"❌ JSON serialization failed for key {key}: {e}")
         raise
 
     try:
@@ -79,10 +79,10 @@ def store_json_data(bucket, data, key, metadata):
                       ContentType="application/json",
                       Metadata=metadata)
 
-        logger.info(f"✅ Stored {key} ({len(body)} bytes)")
+        success_log.info(f"✅ Stored {key} ({len(body)} bytes)")
 
     except Exception as e:
-        logger.exception(f"❌ Unexpected error storing {key}: {e}")
+        error_log.exception(f"❌ Unexpected error storing {key}: {e}")
         raise
 
 # def check_existing_json(bucket, key):
