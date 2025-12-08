@@ -1,13 +1,13 @@
 from core.creds import r2_client
 
-# prefix = "mobile/"
-# bucket_name = "dev-soc-media"
-#
+prefix = "mobile/"
+bucket_name = "dev-soc-media"
+
 # prefix = "imei_numbers/"
 # bucket_name = "dev-soc-media-1"
 
-prefix = "pos_transactions/"
-bucket_name = "dev-transaction"
+# prefix = "pos_transactions/"
+# bucket_name = "dev-transaction"
 
 
 def delete_mobile_folder():

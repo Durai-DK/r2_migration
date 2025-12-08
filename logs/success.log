@@ -1,23 +1,85 @@
-[2025-12-02 20:11:36,615] INFO success_logger ✅ Stored count/last_pri_id.json (63 bytes)
-[2025-12-03 12:49:21,713] INFO uvicorn.access 127.0.0.1:39556 - "GET / HTTP/1.1" 404
-[2025-12-03 12:49:22,888] INFO uvicorn.access 127.0.0.1:39556 - "GET /favicon.ico HTTP/1.1" 404
-[2025-12-03 12:49:30,222] INFO uvicorn.access 127.0.0.1:39568 - "GET /docs HTTP/1.1" 200
-[2025-12-03 12:49:30,787] INFO uvicorn.access 127.0.0.1:39568 - "GET /openapi.json HTTP/1.1" 200
-[2025-12-03 12:51:03,702] INFO uvicorn.access 127.0.0.1:47966 - "GET /docs HTTP/1.1" 200
-[2025-12-03 12:51:03,770] INFO uvicorn.access 127.0.0.1:47966 - "GET /openapi.json HTTP/1.1" 200
-[2025-12-03 12:51:08,742] INFO uvicorn.access 127.0.0.1:47966 - "GET /docs HTTP/1.1" 200
-[2025-12-03 12:51:08,787] INFO uvicorn.access 127.0.0.1:47966 - "GET /openapi.json HTTP/1.1" 200
-[2025-12-03 12:51:30,119] INFO success_logger Fetched count 0 (ETag="ded9e8f0bb1d42dc4083aee090da15c7")
-[2025-12-03 12:51:30,773] INFO success_logger [1] Count updated → 1
-[2025-12-03 12:51:31,706] INFO success_logger Fetched count 1 (ETag="41703f0d4fd18835e90c7db06cc58638")
-[2025-12-03 12:51:32,459] INFO success_logger [3] Count updated → 2
-[2025-12-03 12:51:33,452] INFO success_logger Fetched count 2 (ETag="2e483cb1a2cc3ba233940c0cf8280f89")
-[2025-12-03 12:51:34,181] INFO success_logger [5] Count updated → 3
-[2025-12-03 12:51:34,183] INFO uvicorn.access 127.0.0.1:58720 - "POST /api/pos/create HTTP/1.1" 200
-[2025-12-03 13:04:11,956] INFO uvicorn.access 127.0.0.1:35920 - "GET /docs HTTP/1.1" 200
-[2025-12-03 13:04:12,080] INFO uvicorn.access 127.0.0.1:35920 - "GET /openapi.json HTTP/1.1" 200
-[2025-12-03 13:04:22,942] INFO success_logger Fetched count 0 (ETag="ded9e8f0bb1d42dc4083aee090da15c7")
-[2025-12-03 13:04:23,657] INFO success_logger [1] Count updated → 1
-[2025-12-03 13:04:23,659] INFO uvicorn.access 127.0.0.1:35926 - "POST /api/pos/create HTTP/1.1" 200
-[2025-12-03 13:29:17,853] INFO uvicorn.access 127.0.0.1:50734 - "GET /api/bucket/count-files/?bucket_type=mobile HTTP/1.1" 200
-[2025-12-03 17:25:32,125] INFO uvicorn.access 127.0.0.1:52616 - "GET /api/bucket/count-files/?bucket_type=mobile HTTP/1.1" 200
+[2025-12-06 17:38:22,513] INFO uvicorn.access 127.0.0.1:52107 - "GET /docs HTTP/1.1" 200
+[2025-12-06 17:38:22,599] INFO uvicorn.access 127.0.0.1:52107 - "GET /openapi.json HTTP/1.1" 200
+[2025-12-06 17:49:12,650] INFO uvicorn.access 127.0.0.1:52349 - "GET /docs HTTP/1.1" 200
+[2025-12-06 17:49:12,715] INFO uvicorn.access 127.0.0.1:52349 - "GET /openapi.json HTTP/1.1" 200
+[2025-12-06 17:49:40,537] INFO uvicorn.access 127.0.0.1:52350 - "POST /api/pos/create HTTP/1.1" 500
+[2025-12-06 18:06:52,064] INFO success_logger ✅ Stored count/old_pri_id.json (60 bytes)
+[2025-12-06 18:06:56,179] INFO success_logger ✅ Stored count/old_pri_id.json (60 bytes)
+[2025-12-06 18:09:07,926] INFO success_logger ✅ Stored count/old_pri_id1.json (60 bytes)
+[2025-12-06 18:09:12,089] INFO success_logger ✅ Stored count/old_pri_id1.json (60 bytes)
+[2025-12-06 18:09:55,262] INFO success_logger ✅ Stored count/old_pri_id2.json (58 bytes)
+[2025-12-06 18:09:59,644] INFO success_logger ✅ Stored count/old_pri_id2.json (58 bytes)
+[2025-12-06 18:10:21,154] INFO success_logger ✅ Stored count/old_pri_id.json (58 bytes)
+[2025-12-06 18:10:25,592] INFO success_logger ✅ Stored count/old_pri_id.json (58 bytes)
+[2025-12-06 18:11:18,994] INFO success_logger ✅ Stored count/old_pri_id.json (58 bytes)
+[2025-12-06 18:11:32,363] INFO uvicorn.access 127.0.0.1:52723 - "POST /api/pos/create HTTP/1.1" 422
+[2025-12-06 18:11:56,144] INFO success_logger Fetched count=1, ETag="aee117874f6ee5ba11fee187c8bc5819"
+[2025-12-06 18:11:56,596] INFO success_logger [1] Count updated → 2
+[2025-12-06 18:11:57,141] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/2.json 
+[2025-12-06 18:11:57,164] INFO uvicorn.access 127.0.0.1:52733 - "POST /api/pos/create HTTP/1.1" 500
+[2025-12-06 18:12:46,327] INFO success_logger ✅ Stored count/old_pri_id.json (60 bytes)
+[2025-12-06 18:12:48,118] INFO success_logger ✅ Stored count/old_pri_id.json (60 bytes)
+[2025-12-06 18:12:52,840] INFO success_logger Fetched count=1, ETag="81a16766700ee4e7c90f546a36167d2a"
+[2025-12-06 18:12:53,307] INFO success_logger [1] Count updated → 2
+[2025-12-06 18:12:53,811] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/2.json 
+[2025-12-06 18:12:53,866] INFO uvicorn.access 127.0.0.1:52748 - "POST /api/pos/create HTTP/1.1" 500
+[2025-12-06 18:13:11,731] INFO success_logger ✅ Stored count/old_pri_id.json (58 bytes)
+[2025-12-06 18:16:01,502] INFO success_logger Fetched count=1, ETag="d83975b1caf0b91f8b5c9776cf213c99"
+[2025-12-06 18:16:02,103] INFO success_logger [1] Count updated → 2
+[2025-12-06 18:16:03,045] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/2.json 
+[2025-12-06 18:16:03,477] INFO success_logger ✅ Stored R2 Bucket | Key: crm_error_response/2.json 
+[2025-12-06 18:16:03,508] INFO uvicorn.access 127.0.0.1:52845 - "POST /api/pos/create HTTP/1.1" 200
+[2025-12-06 18:18:23,042] INFO uvicorn.access 127.0.0.1:52900 - "GET /docs HTTP/1.1" 200
+[2025-12-06 18:18:23,114] INFO uvicorn.access 127.0.0.1:52900 - "GET /openapi.json HTTP/1.1" 200
+[2025-12-06 18:18:30,175] INFO success_logger Fetched count=2, ETag="579d97073df8fad764c514018fd28b7d"
+[2025-12-06 18:18:30,709] INFO success_logger [1] Count updated → 3
+[2025-12-06 18:18:31,723] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/3.json 
+[2025-12-06 18:18:32,575] INFO success_logger ✅ Stored R2 Bucket | Key: crm_error_response/3.json 
+[2025-12-06 18:18:32,577] INFO uvicorn.access 127.0.0.1:52901 - "POST /api/pos/create HTTP/1.1" 200
+[2025-12-06 18:31:10,457] INFO success_logger Fetched count=3, ETag="164e05dfd8343fdd686decaf0dfe8f05"
+[2025-12-06 18:31:10,909] INFO success_logger [1] Count updated → 4
+[2025-12-06 18:31:11,499] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/4.json 
+[2025-12-06 18:31:12,056] INFO success_logger ✅ Stored R2 Bucket | Key: crm_error_response/4.json 
+[2025-12-06 18:31:12,099] INFO uvicorn.access 127.0.0.1:52936 - "POST /api/pos/create HTTP/1.1" 200
+[2025-12-06 18:39:14,732] INFO uvicorn.access 127.0.0.1:53377 - "GET /docs HTTP/1.1" 200
+[2025-12-06 18:39:14,801] INFO uvicorn.access 127.0.0.1:53377 - "GET /openapi.json HTTP/1.1" 200
+[2025-12-06 18:39:21,689] INFO success_logger Fetched count=4, ETag="449b5f872cd04a983ee58938694aed1c"
+[2025-12-06 18:39:22,116] INFO success_logger [1] Count updated → 5
+[2025-12-06 18:39:22,688] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/5.json 
+[2025-12-06 18:39:23,086] INFO success_logger ✅ Stored R2 Bucket | Key: crm_error_response/5.json 
+[2025-12-06 18:39:23,087] INFO uvicorn.access 127.0.0.1:53376 - "POST /api/pos/create HTTP/1.1" 200
+[2025-12-06 18:41:21,574] INFO success_logger Fetched count=5, ETag="bdc6ec40f241f8d36bf06a2efc12c18b"
+[2025-12-06 18:41:22,023] INFO success_logger [1] Count updated → 6
+[2025-12-06 18:41:22,163] INFO success_logger {'errorType': 400, 'errorMessage': 'email must be a string', 'message': 'email must be a string', 'errors': ['email must be a string'], 'errorRaw': {'_original': {'name': 'SABARRISH.M', 'mobile': '9710617505', 'gender': 'Male', 'email': None, 'type': 'Customer', 'pincode': '600061', 'branch': ['NANG'], 'city': 'Chennai', 'state': 'Tamil Nadu', 'alt_mobile': '9710617505', 'source': 'Python', 'status': True}, 'details': [{'message': '"email" must be a string', 'path': ['email'], 'type': 'string.base', 'context': {'label': 'email', 'value': None, 'key': 'email'}}]}, 'errorsValidation': None, 'status': 400}
+[2025-12-06 18:41:22,944] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/6.json 
+[2025-12-06 18:41:23,417] INFO success_logger ✅ Stored R2 Bucket | Key: crm_error_response/6.json 
+[2025-12-06 18:41:23,448] INFO uvicorn.access 127.0.0.1:53419 - "POST /api/pos/create HTTP/1.1" 200
+[2025-12-08 10:51:41,045] INFO uvicorn.access 127.0.0.1:49787 - "GET /docs HTTP/1.1" 200
+[2025-12-08 10:51:41,115] INFO uvicorn.access 127.0.0.1:49787 - "GET /openapi.json HTTP/1.1" 200
+[2025-12-08 10:53:16,428] INFO success_logger Fetched count=6, ETag="20057184e1f570ebbeb64cb6fc6cac8e"
+[2025-12-08 10:53:17,655] INFO success_logger [1] Count updated → 7
+[2025-12-08 10:53:17,791] INFO success_logger {'errorType': 400, 'errorMessage': 'email must be a string', 'message': 'email must be a string', 'errors': ['email must be a string'], 'errorRaw': {'_original': {'name': 'SABARRISH.M', 'mobile': '9710617505', 'gender': 'Male', 'email': None, 'type': 'Customer', 'pincode': '600061', 'branch': ['NANG'], 'city': 'Chennai', 'state': 'Tamil Nadu', 'alt_mobile': '9710617505', 'source': 'Python', 'status': True}, 'details': [{'message': '"email" must be a string', 'path': ['email'], 'type': 'string.base', 'context': {'label': 'email', 'value': None, 'key': 'email'}}]}, 'errorsValidation': None, 'status': 400}
+[2025-12-08 10:53:18,290] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/7.json 
+[2025-12-08 10:53:18,884] INFO success_logger ✅ Stored R2 Bucket | Key: crm_error_response/7.json 
+[2025-12-08 10:53:18,888] INFO uvicorn.access 127.0.0.1:49839 - "POST /api/pos/create HTTP/1.1" 200
+[2025-12-08 11:00:14,237] INFO success_logger Fetched count=7, ETag="3d4e09b7e1377eca0350533bf071600e"
+[2025-12-08 11:00:16,082] INFO success_logger [1] Count updated → 8
+[2025-12-08 11:00:16,237] INFO success_logger {'errorType': 400, 'errorMessage': 'email must be a valid email', 'message': 'email must be a valid email', 'errors': ['email must be a valid email'], 'errorRaw': {'_original': {'name': 'SABARRISH.M', 'mobile': '9710617505', 'gender': 'Male', 'email': 'None', 'type': 'Customer', 'pincode': '600061', 'branch': ['NANG'], 'city': 'Chennai', 'state': 'Tamil Nadu', 'alt_mobile': '9710617505', 'source': 'Python', 'status': True}, 'details': [{'message': '"email" must be a valid email', 'path': ['email'], 'type': 'string.email', 'context': {'value': 'None', 'invalids': ['None'], 'label': 'email', 'key': 'email'}}]}, 'errorsValidation': None, 'status': 400}
+[2025-12-08 11:00:16,828] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/8.json 
+[2025-12-08 11:00:17,423] INFO success_logger ✅ Stored R2 Bucket | Key: crm_error_response/8.json 
+[2025-12-08 11:00:17,458] INFO uvicorn.access 127.0.0.1:49985 - "POST /api/pos/create HTTP/1.1" 200
+[2025-12-08 11:06:11,933] INFO success_logger Fetched count=8, ETag="6ce43088f7e9074e5e4027e84046580b"
+[2025-12-08 11:06:12,463] INFO success_logger [1] Count updated → 9
+[2025-12-08 11:06:12,667] INFO success_logger {'message': 'Customer updated successfully.', 'data': {'id': '5d05caee-99d2-11f0-9f12-66004b038d1f', 'cus_id': 12893331, 'email': 'SABARRISHM@GMAIL.COM', 'mobile': '9710617505', 'alt_mobile': '9710617505', 'whatsapp_num': None, 'wedding_anniversary': None, 'source': 'Python', 'email_verified': None, 'mobile_verified': None, 'merged_status': False, 'merged': None, 'is_business': False, 'password': None, 'salt': None, 'login_type': '2', 'img_extension': None, 'gender': 'Male', 'name': 'SABARRISH.M', 'fcm_id': None, 'customer_id': 'PC-CUS-12893331', 'online_customer_id': None, 'profile_image': None, 'created_using': 'Email-Mobile', 'account_id': None, 'blood_group': None, 'dob': None, 'doa': None, 'walk_in_ref': None, 'status': True, 'language': ['Tamil'], 'proofs': None, 'alt_mobile_numbers': [], 'branch': ['NANG'], 'notifications': [], 'role': 'CUSTOMER', 'type': 'Customer', 'pincode': '600061', 'city': 'Chennai', 'district': 'KANCHIPURAM', 'state': 'Tamil Nadu', 'createdBy': {'date': '2025-09-25T05:42:03.120Z', 'dept': 'Sales', 'name': 'Moorthy A', 'empId': '20441', 'branch': 'TN-NANGANALLUR', 'branchCode': 'NANG', 'designation': 'Branch Manager-M'}, 'updatedBy': {'date': '2025-12-08T05:36:12.765Z', 'source': 'External'}, 'created_at': '2025-09-25T05:42:03.000Z', 'updated_at': '2025-12-08T05:36:13.000Z', 'customerId': 'PC-CUS-12893331'}, 'status': 201, 'devPurpose': None}
+[2025-12-08 11:06:13,577] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/9.json 
+[2025-12-08 11:06:13,630] INFO uvicorn.access 127.0.0.1:50057 - "POST /api/pos/create HTTP/1.1" 200
+[2025-12-08 15:14:49,380] INFO success_logger Fetched count=9, ETag="8d2aaffd3d4f2f4bac6eea220112a2ab"
+[2025-12-08 15:14:49,775] INFO success_logger [1] Count updated → 10
+[2025-12-08 15:14:49,934] INFO success_logger {'message': 'Customer updated successfully.', 'data': {'id': '5d05caee-99d2-11f0-9f12-66004b038d1f', 'cus_id': 12893331, 'email': 'SABARRISHM@GMAIL.COM', 'mobile': '9710617505', 'alt_mobile': '9710617505', 'whatsapp_num': None, 'wedding_anniversary': None, 'source': 'Python', 'email_verified': None, 'mobile_verified': None, 'merged_status': False, 'merged': None, 'is_business': False, 'password': None, 'salt': None, 'login_type': '2', 'img_extension': None, 'gender': 'Male', 'name': 'SABARRISH.M', 'fcm_id': None, 'customer_id': 'PC-CUS-12893331', 'online_customer_id': None, 'profile_image': None, 'created_using': 'Email-Mobile', 'account_id': None, 'blood_group': None, 'dob': None, 'doa': None, 'walk_in_ref': None, 'status': True, 'language': ['Tamil'], 'proofs': None, 'alt_mobile_numbers': [], 'branch': ['NANG'], 'notifications': [], 'role': 'CUSTOMER', 'type': 'Customer', 'pincode': '600061', 'city': 'Chennai', 'district': 'KANCHIPURAM', 'state': 'Tamil Nadu', 'createdBy': {'date': '2025-09-25T05:42:03.120Z', 'dept': 'Sales', 'name': 'Moorthy A', 'empId': '20441', 'branch': 'TN-NANGANALLUR', 'branchCode': 'NANG', 'designation': 'Branch Manager-M'}, 'updatedBy': {'date': '2025-12-08T09:44:49.928Z', 'source': 'External'}, 'created_at': '2025-09-25T05:42:03.000Z', 'updated_at': '2025-12-08T09:44:50.000Z', 'customerId': 'PC-CUS-12893331'}, 'status': 201, 'devPurpose': None}
+[2025-12-08 15:14:50,866] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/10.json 
+[2025-12-08 15:14:51,497] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/imei/25114416041039691.json 
+[2025-12-08 15:14:51,948] INFO success_logger ✅ Stored R2 Bucket | Key: imei_numbers/25114416041039691.json 
+[2025-12-08 15:14:52,334] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/id/10.json 
+[2025-12-08 15:14:52,798] INFO success_logger ✅ Stored R2 Bucket | Key: mobile/9710617505/imei/25114416041039688.json 
+[2025-12-08 15:14:54,096] INFO success_logger ✅ Stored R2 Bucket | Key: imei_numbers/25114416041039688.json 
+[2025-12-08 15:14:54,097] INFO uvicorn.access 127.0.0.1:61519 - "POST /api/pos/create HTTP/1.1" 200

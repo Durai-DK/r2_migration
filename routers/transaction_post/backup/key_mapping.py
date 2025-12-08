@@ -7,9 +7,7 @@ from logs.log_settings import error_log, success_log
 
 
 API_CRM_BASE_URL = os.getenv("API_CRM_BASE_URL", "")
-# API_CRM_AUTH_TOKEN = os.getenv("API_CRM_AUTH_TOKEN", "")
-API_CRM_AUTH_TOKEN = "App eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJmYTg4Y2I1LWZlMTktNGM2OS"
-
+API_CRM_AUTH_TOKEN = os.getenv("API_CRM_AUTH_TOKEN", "")
 
 age_param = {"CompanyCode": "pmpl"}
 
@@ -17,14 +15,10 @@ age_header = {"securitycode": "5382-1294-8763-3537", "userid": "poorvika"}
 
 age_url = "https://apx.poorvikamobiles.net/api/apxapi/GetImeiSerialNoCurrentStatus"
 
-pos_bucket = "dev-soc-media"
-pos_imei_bucket = "dev-soc-media-1"
-
-# pos_bucket = "pos-transaction"
-# pos_imei_bucket = "pos-transaction-imei"
+pos_bucket = "pos-transaction"
+pos_imei_bucket = "pos-transaction-imei"
 mobile_prefix = "mobile"
 imei_prefix = "imei_numbers"
-
 
 def error_response(code: int, message: str, error: Any):
     return JSONResponse(
@@ -295,33 +289,33 @@ def crm_customer_id(request_body):
         current_data = request_body
 
         data = {
-            "name": str(current_data.get("customer_fname"))
-                    or str(current_data.get("customer_lname")),
+            "name": current_data.get("customer_fname")
+                    or current_data.get("customer_lname"),
 
-            "mobile": str(current_data.get("customer_mobile"))
-                      or str(current_data.get("customer_phone_no1"))
-                      or str(current_data.get("customer_phone_no2")),
+            "mobile": current_data.get("customer_mobile")
+                      or current_data.get("customer_phone_no1")
+                      or current_data.get("customer_phone_no2"),
 
-            "gender": str(current_data.get("customer_gender")),
-            "email": str(current_data.get("customer_email")),
+            "gender": current_data.get("customer_gender"),
+            "email": current_data.get("customer_email__c"),
             "type": "Customer",
 
-            "pincode": str(current_data.get("customer_pincode"))
-                       or str(current_data.get("billed_at_pincode"))
-                       or str(current_data.get("delivery_to_pincode")),
+            "pincode": current_data.get("customer_pincode")
+                       or current_data.get("billed_at_pincode")
+                       or current_data.get("delivery_to_pincode"),
 
-            "branch": [str(current_data.get("store_code"))],
+            "branch": [current_data.get("store_code")],
 
-            "city": str(current_data.get("customer_city"))
-                    or str(current_data.get("billed_at_city"))
-                    or str(current_data.get("delivery_to_city")),
+            "city": current_data.get("customer_city")
+                    or current_data.get("billed_at_city")
+                    or current_data.get("delivery_to_city"),
 
-            "state": str(current_data.get("customer_state"))
-                     or str(current_data.get("billed_at_state"))
-                     or str(current_data.get("delivery_from_state")),
+            "state": current_data.get("customer_state")
+                     or current_data.get("billed_at_state")
+                     or current_data.get("delivery_from_state"),
 
-            "alt_mobile": str(current_data.get("customer_phone_no1"))
-                          or str(current_data.get("customer_phone_no2")),
+            "alt_mobile": current_data.get("customer_phone_no1")
+                          or current_data.get("customer_phone_no2"),
 
             "source": "Python",
             "status": True
@@ -333,8 +327,6 @@ def crm_customer_id(request_body):
         }
 
         resp = requests.post(API_CRM_BASE_URL, json=data, headers=headers).json()
-
-        success_log.info(resp)
 
         if resp.get("status") in (200, 201):
             return resp.get("data", {}).get("customer_id", ""), None
@@ -401,28 +393,11 @@ def push_to_bucket(invoice: Dict[str, Any], pri_id):
     if not records:
         raise ValueError("No records generated")
 
-    base_record = records[0]
-
-    mobile = base_record.get("customer_mobile__c", "")
-    customer_id = base_record.get("customerId", "")
-    all_serial_no = base_record.get("item_remarks1__c", "")
-    invoice_id = base_record.get("bill_transaction_no__c", "")
-
-    base_metadata = {
-            "customer-id": str(customer_id),
-            "invoice-id": invoice_id,
-            "serial-no": str(all_serial_no),
-            "mobile": str(mobile),
-            "pri_id": str(pri_id),
-        }
-
-    mobile_pri_id = f"{mobile_prefix}/{mobile}/id/{pri_id}.json"
-    store_json_data(pos_bucket, base_record, mobile_pri_id, base_metadata)
-
     for record in records:
+        mobile = record.get("customer_mobile__c", "")
         serial_no = record.get("item_remarks1__c", "")
-        if not serial_no:
-            continue
+        customer_id = record.get("customerId", "")
+        invoice_id = record.get("bill_transaction_no__c", "")
 
         metadata = {
             "customer-id": str(customer_id),
@@ -432,11 +407,15 @@ def push_to_bucket(invoice: Dict[str, Any], pri_id):
             "pri_id": str(pri_id),
         }
 
-        mobile_imei = f"{mobile_prefix}/{mobile}/imei/{serial_no}.json"
-        store_json_data(pos_bucket, record, mobile_imei, metadata)
+        mobile_pri_id = f"{mobile_prefix}/{mobile}/id/{pri_id}.json"
+        store_json_data(pos_bucket, record, mobile_pri_id, metadata)
 
-        imei_key = f"{imei_prefix}/{serial_no}.json"
-        store_json_data(pos_bucket, record, imei_key, metadata)
+        if serial_no:
+            mobile_imei = f"{mobile_prefix}/{mobile}/imei/{serial_no}.json"
+            store_json_data(pos_bucket, record, mobile_imei, metadata)
+
+            imei_key = f"{imei_prefix}/{serial_no}.json"
+            store_json_data(pos_bucket, record, imei_key, metadata)
 
     if error_bucket:
         err_key = f"crm_error_response/{pri_id}.json"

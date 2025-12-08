@@ -14,8 +14,7 @@ def create_record(invoice: dict):
     try:
         pri_id = fetch_and_update_count(pos_bucket, count_key)
 
-        # data = invoice.get("data")
-        push_to_bucket(invoice, str(pri_id))
+        push_to_bucket(invoice, pri_id)
 
         results = {
             "status": "success",

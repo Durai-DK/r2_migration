@@ -1,16 +1,16 @@
-import json, datetime, time
-from core.creds import r2_client
-from botocore.exceptions import ClientError
-from logs.log_settings import success_log, error_log
-from routers.r2_bucket.get_functions import error_response
-
-max_retries = 5
-
-pos_bucket = "pos-transaction"
-path_key = "count/old_pri_id.json"
-dt = datetime.datetime.fromisoformat("2025-12-02T20:11:35")
-now = dt.strftime("%Y-%m-%d ( %H:%M:%S )")
-
+# import json, datetime, time
+# from core.creds import r2_client
+# from botocore.exceptions import ClientError
+# from logs.log_settings import success_log, error_log
+# from routers.r2_bucket.get_functions import error_response
+#
+# max_retries = 5
+#
+# pos_bucket = "pos-transaction"
+# path_key = "count/old_pri_id.json"
+# dt = datetime.datetime.fromisoformat("2025-12-02T20:11:35")
+# now = dt.strftime("%Y-%m-%d ( %H:%M:%S )")
+#
 # def store_json_data_etag(bucket, key, data, metadata, if_match=None):
 #     if metadata is None:
 #         metadata = {}
@@ -87,7 +87,7 @@ now = dt.strftime("%Y-%m-%d ( %H:%M:%S )")
 #
 #     error_log.error(f"❌ Too many retries for {key} — high write conflict")
 #     return error_response(409, "Write Conflict", "Too many retries, parallel writes detected")
-
+#
 # def get_count_etg(bucket, key):
 #     r2 = r2_client()
 #
@@ -185,26 +185,26 @@ now = dt.strftime("%Y-%m-%d ( %H:%M:%S )")
 #         "status": "success",
 #         "pri_id": old_count + 1  # VERY IMPORTANT
 #     }
-
-def create_old_pri_id():
-    count_key = f"count/old_pri_id.json"
-
-    body = {
-        "pri_id": 0, "updated_at": now
-    }
-
-    metadata = {
-        "pri_id": str(0), "updated_at": now
-    }
-
-    params = {
-        "Bucket": pos_bucket,
-        "Key": count_key,
-        "Body": json.dumps(body).encode("utf-8"),
-        "ContentType": "application/json",
-        "Metadata": metadata
-    }
-
-    r2 = r2_client()
-    r2.put_object(**params)
-    print("count file created")
+#
+# def create_old_pri_id():
+#     count_key = f"count/old_pri_id.json"
+#
+#     body = {
+#         "pri_id": 0, "updated_at": now
+#     }
+#
+#     metadata = {
+#         "pri_id": str(0), "updated_at": now
+#     }
+#
+#     params = {
+#         "Bucket": pos_bucket,
+#         "Key": count_key,
+#         "Body": json.dumps(body).encode("utf-8"),
+#         "ContentType": "application/json",
+#         "Metadata": metadata
+#     }
+#
+#     r2 = r2_client()
+#     r2.put_object(**params)
+#     print("count file created")

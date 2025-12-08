@@ -200,7 +200,8 @@ def count_files_api(
             # path_key = f"{mob_prefix}/"
             # return count_mobile_numbers(mob_bucket, path_key)
             path_key = f"mobile/"
-            return count_mobile_numbers("pos-transaction", path_key)
+            # return count_mobile_numbers("pos-transaction", path_key)
+            return count_mobile_numbers("dev-soc-media", path_key)
 
         if mobile_no and file_type == "id":
             path_key = f"{mob_prefix}/{mobile_no}/id/"
