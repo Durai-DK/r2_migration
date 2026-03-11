@@ -1,0 +1,523 @@
+[
+  {
+    "pri_id": "01612459-cc8b-4fad-849a-6809d6d0f4fe-ERR",
+    "timestamp": "2026-02-24 14:06:03",
+    "errors": {
+      "batch_id": "01612459-cc8b-4fad-849a-6809d6d0f4fe",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "CRM Api Failed",
+        "message": "CRM Api error produced",
+        "sent_email": "gowtham47@gmail.com",
+        "sent_mobile": "9791251201",
+        "crm_status": 400,
+        "crm_response": {
+          "errorType": 400,
+          "errorMessage": "Something went wrong, Please try again.",
+          "message": "Something went wrong, Please try again.",
+          "errors": [
+            null
+          ],
+          "errorRaw": {
+            "query": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, ?, ?, ?, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, ?, ?, ?, DEFAULT, ?, ?, ?, ?, ?)",
+            "parameters": [
+              "gowtham47@gmail.com",
+              "9791251201",
+              "9791251201",
+              "Python",
+              "Male",
+              "GOWTHAM",
+              "Email-Mobile",
+              true,
+              "[]",
+              "Customer",
+              "625531",
+              "Theni",
+              "Tamil Nadu",
+              "{\"date\":\"2026-02-24T08:36:03.419Z\",\"source\":\"External\"}",
+              "{\"date\":\"2026-02-24T08:36:03.419Z\",\"source\":\"External\"}",
+              "2026-02-24T08:36:03.427Z",
+              "2026-02-24T08:36:03.427Z"
+            ],
+            "driverError": {
+              "code": "ER_DUP_ENTRY",
+              "errno": 1062,
+              "sqlState": "23000",
+              "sqlMessage": "target: crm_prod.-.primary: vttablet: Duplicate entry 'gowtham47@gmail.com' for key 'customer.IDX_email' (errno 1062) (sqlstate 23000) (CallerID: 7066kmkcoszuvatcbk98): Sql: \"insert into customer(id, cus_id, email, mobile, alt_mobile, whatsapp_num, wedding_anniversary, source, email_verified, mobile_verified, merged_status, merged, is_business, `password`, salt, login_type, img_extension, gender, `name`, fcm_id, customer_id, online_customer_id, profile_image, created_using, account_id, blood_group, dob, doa, walk_in_ref, `status`, `language`, proofs, alt_mobile_numbers, branch, notifications, role, type, pincode, city, district, state, createdBy, updatedBy, created_at, updated_at) values (default, default, :vtg1 /* VARCHAR */, :vtg2 /* VARCHAR */, :vtg3 /* VARCHAR */, default, default, :vtg4 /* VARCHAR */, default, default, default, default, default, default, default, default, default, :vtg5 /* VARCHAR */, :vtg6 /* VARCHAR */, default, default, default, default, :vtg7 /* VARCHAR */, default, default, default, default, default, true, default, default, default, :vtg8 /* VARCHAR */, default, default, :vtg9 /* VARCHAR */, :vtg10 /* VARCHAR */, :vtg11 /* VARCHAR */, default, :vtg12 /* VARCHAR */, :vtg13 /* VARCHAR */, :vtg14 /* VARCHAR */, :vtg15 /* VARCHAR */, :vtg16 /* VARCHAR */)\", BindVars: {REDACTED}",
+              "sql": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, 'gowtham47@gmail.com', '9791251201', '9791251201', DEFAULT, DEFAULT, 'Python', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Male', 'GOWTHAM', DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Email-Mobile', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, true, DEFAULT, DEFAULT, DEFAULT, '[]', DEFAULT, DEFAULT, 'Customer', '625531', 'Theni', DEFAULT, 'Tamil Nadu', '{\\\"date\\\":\\\"2026-02-24T08:36:03.419Z\\\",\\\"source\\\":\\\"External\\\"}', '{\\\"date\\\":\\\"2026-02-24T08:36:03.419Z\\\",\\\"source\\\":\\\"External\\\"}', '2026-02-24 08:36:03.427', '2026-02-24 08:36:03.427')"
+            },
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "sqlMessage": "target: crm_prod.-.primary: vttablet: Duplicate entry 'gowtham47@gmail.com' for key 'customer.IDX_email' (errno 1062) (sqlstate 23000) (CallerID: 7066kmkcoszuvatcbk98): Sql: \"insert into customer(id, cus_id, email, mobile, alt_mobile, whatsapp_num, wedding_anniversary, source, email_verified, mobile_verified, merged_status, merged, is_business, `password`, salt, login_type, img_extension, gender, `name`, fcm_id, customer_id, online_customer_id, profile_image, created_using, account_id, blood_group, dob, doa, walk_in_ref, `status`, `language`, proofs, alt_mobile_numbers, branch, notifications, role, type, pincode, city, district, state, createdBy, updatedBy, created_at, updated_at) values (default, default, :vtg1 /* VARCHAR */, :vtg2 /* VARCHAR */, :vtg3 /* VARCHAR */, default, default, :vtg4 /* VARCHAR */, default, default, default, default, default, default, default, default, default, :vtg5 /* VARCHAR */, :vtg6 /* VARCHAR */, default, default, default, default, :vtg7 /* VARCHAR */, default, default, default, default, default, true, default, default, default, :vtg8 /* VARCHAR */, default, default, :vtg9 /* VARCHAR */, :vtg10 /* VARCHAR */, :vtg11 /* VARCHAR */, default, :vtg12 /* VARCHAR */, :vtg13 /* VARCHAR */, :vtg14 /* VARCHAR */, :vtg15 /* VARCHAR */, :vtg16 /* VARCHAR */)\", BindVars: {REDACTED}",
+            "sql": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, 'gowtham47@gmail.com', '9791251201', '9791251201', DEFAULT, DEFAULT, 'Python', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Male', 'GOWTHAM', DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Email-Mobile', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, true, DEFAULT, DEFAULT, DEFAULT, '[]', DEFAULT, DEFAULT, 'Customer', '625531', 'Theni', DEFAULT, 'Tamil Nadu', '{\\\"date\\\":\\\"2026-02-24T08:36:03.419Z\\\",\\\"source\\\":\\\"External\\\"}', '{\\\"date\\\":\\\"2026-02-24T08:36:03.419Z\\\",\\\"source\\\":\\\"External\\\"}', '2026-02-24 08:36:03.427', '2026-02-24 08:36:03.427')"
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "5f0290df-70ad-4adf-927e-c93e64807dcd-ERR",
+    "timestamp": "2026-02-24 14:17:10",
+    "errors": {
+      "batch_id": "5f0290df-70ad-4adf-927e-c93e64807dcd",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_error",
+        "sent_email": "nomail.@gmail.com",
+        "sent_mobile": "8660346102",
+        "crm_status": 400,
+        "crm_response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "BIRAPPAPRABHUCHIGARER",
+              "mobile": "8660346102",
+              "gender": "Male",
+              "email": "nomail.@gmail.com",
+              "type": "Customer",
+              "pincode": "581208",
+              "branch": "",
+              "city": "Haveri",
+              "state": "Karnataka",
+              "alt_mobile": "8660346102",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "nomail.@gmail.com",
+                  "invalids": [
+                    "nomail.@gmail.com"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "25b76569-84bc-4e9c-ad22-4c27ae304cb0-ERR",
+    "timestamp": "2026-02-24 14:19:35",
+    "errors": {
+      "batch_id": "25b76569-84bc-4e9c-ad22-4c27ae304cb0",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_error",
+        "sent_email": "nomail.@gmail.com",
+        "sent_mobile": "8660346102",
+        "crm_status": 400,
+        "crm_response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "BIRAPPAPRABHUCHIGARER",
+              "mobile": "8660346102",
+              "gender": "Male",
+              "email": "nomail.@gmail.com",
+              "type": "Customer",
+              "pincode": "581208",
+              "branch": "",
+              "city": "Haveri",
+              "state": "Karnataka",
+              "alt_mobile": "8660346102",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "nomail.@gmail.com",
+                  "invalids": [
+                    "nomail.@gmail.com"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "2e1219fc-a37b-46f6-a1f3-f5b94e580448-ERR",
+    "timestamp": "2026-02-24 12:51:03",
+    "errors": {
+      "batch_id": "2e1219fc-a37b-46f6-a1f3-f5b94e580448",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "CRM Api Failed",
+        "message": "CRM Api error produced",
+        "sent_email": "nagu12@gmail.com",
+        "sent_mobile": "6364588948",
+        "crm_status": 400,
+        "crm_response": {
+          "errorType": 400,
+          "errorMessage": "Something went wrong, Please try again.",
+          "message": "Something went wrong, Please try again.",
+          "errors": [
+            null
+          ],
+          "errorRaw": {
+            "query": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, ?, ?, ?, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, ?, ?, ?, DEFAULT, ?, ?, ?, ?, ?)",
+            "parameters": [
+              "nagu12@gmail.com",
+              "6364588948",
+              "6364588948",
+              "Python",
+              "Male",
+              "NAGU",
+              "Email-Mobile",
+              true,
+              "[]",
+              "Customer",
+              "562117",
+              "Kanakapur",
+              "Karnataka",
+              "{\"date\":\"2026-02-24T07:21:03.755Z\",\"source\":\"External\"}",
+              "{\"date\":\"2026-02-24T07:21:03.755Z\",\"source\":\"External\"}",
+              "2026-02-24T07:21:03.820Z",
+              "2026-02-24T07:21:03.820Z"
+            ],
+            "driverError": {
+              "code": "ER_DUP_ENTRY",
+              "errno": 1062,
+              "sqlState": "23000",
+              "sqlMessage": "target: crm_prod.-.primary: vttablet: Duplicate entry 'nagu12@gmail.com' for key 'customer.IDX_email' (errno 1062) (sqlstate 23000) (CallerID: 7066kmkcoszuvatcbk98): Sql: \"insert into customer(id, cus_id, email, mobile, alt_mobile, whatsapp_num, wedding_anniversary, source, email_verified, mobile_verified, merged_status, merged, is_business, `password`, salt, login_type, img_extension, gender, `name`, fcm_id, customer_id, online_customer_id, profile_image, created_using, account_id, blood_group, dob, doa, walk_in_ref, `status`, `language`, proofs, alt_mobile_numbers, branch, notifications, role, type, pincode, city, district, state, createdBy, updatedBy, created_at, updated_at) values (default, default, :vtg1 /* VARCHAR */, :vtg2 /* VARCHAR */, :vtg3 /* VARCHAR */, default, default, :vtg4 /* VARCHAR */, default, default, default, default, default, default, default, default, default, :vtg5 /* VARCHAR */, :vtg6 /* VARCHAR */, default, default, default, default, :vtg7 /* VARCHAR */, default, default, default, default, default, true, default, default, default, :vtg8 /* VARCHAR */, default, default, :vtg9 /* VARCHAR */, :vtg10 /* VARCHAR */, :vtg11 /* VARCHAR */, default, :vtg12 /* VARCHAR */, :vtg13 /* VARCHAR */, :vtg14 /* VARCHAR */, :vtg15 /* VARCHAR */, :vtg16 /* VARCHAR */)\", BindVars: {REDACTED}",
+              "sql": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, 'nagu12@gmail.com', '6364588948', '6364588948', DEFAULT, DEFAULT, 'Python', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Male', 'NAGU', DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Email-Mobile', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, true, DEFAULT, DEFAULT, DEFAULT, '[]', DEFAULT, DEFAULT, 'Customer', '562117', 'Kanakapur', DEFAULT, 'Karnataka', '{\\\"date\\\":\\\"2026-02-24T07:21:03.755Z\\\",\\\"source\\\":\\\"External\\\"}', '{\\\"date\\\":\\\"2026-02-24T07:21:03.755Z\\\",\\\"source\\\":\\\"External\\\"}', '2026-02-24 07:21:03.820', '2026-02-24 07:21:03.820')"
+            },
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "sqlMessage": "target: crm_prod.-.primary: vttablet: Duplicate entry 'nagu12@gmail.com' for key 'customer.IDX_email' (errno 1062) (sqlstate 23000) (CallerID: 7066kmkcoszuvatcbk98): Sql: \"insert into customer(id, cus_id, email, mobile, alt_mobile, whatsapp_num, wedding_anniversary, source, email_verified, mobile_verified, merged_status, merged, is_business, `password`, salt, login_type, img_extension, gender, `name`, fcm_id, customer_id, online_customer_id, profile_image, created_using, account_id, blood_group, dob, doa, walk_in_ref, `status`, `language`, proofs, alt_mobile_numbers, branch, notifications, role, type, pincode, city, district, state, createdBy, updatedBy, created_at, updated_at) values (default, default, :vtg1 /* VARCHAR */, :vtg2 /* VARCHAR */, :vtg3 /* VARCHAR */, default, default, :vtg4 /* VARCHAR */, default, default, default, default, default, default, default, default, default, :vtg5 /* VARCHAR */, :vtg6 /* VARCHAR */, default, default, default, default, :vtg7 /* VARCHAR */, default, default, default, default, default, true, default, default, default, :vtg8 /* VARCHAR */, default, default, :vtg9 /* VARCHAR */, :vtg10 /* VARCHAR */, :vtg11 /* VARCHAR */, default, :vtg12 /* VARCHAR */, :vtg13 /* VARCHAR */, :vtg14 /* VARCHAR */, :vtg15 /* VARCHAR */, :vtg16 /* VARCHAR */)\", BindVars: {REDACTED}",
+            "sql": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, 'nagu12@gmail.com', '6364588948', '6364588948', DEFAULT, DEFAULT, 'Python', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Male', 'NAGU', DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Email-Mobile', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, true, DEFAULT, DEFAULT, DEFAULT, '[]', DEFAULT, DEFAULT, 'Customer', '562117', 'Kanakapur', DEFAULT, 'Karnataka', '{\\\"date\\\":\\\"2026-02-24T07:21:03.755Z\\\",\\\"source\\\":\\\"External\\\"}', '{\\\"date\\\":\\\"2026-02-24T07:21:03.755Z\\\",\\\"source\\\":\\\"External\\\"}', '2026-02-24 07:21:03.820', '2026-02-24 07:21:03.820')"
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "9dab5eaa-b82e-420c-97cd-61530ee758f6-ERR",
+    "timestamp": "2026-02-24 11:27:01",
+    "errors": {
+      "batch_id": "9dab5eaa-b82e-420c-97cd-61530ee758f6",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "CRM Api Failed",
+        "message": "CRM Api error produced",
+        "sent_email": "shanthi54@gmail.com",
+        "sent_mobile": "7708051855",
+        "crm_status": 400,
+        "crm_response": {
+          "errorType": 400,
+          "errorMessage": "Something went wrong, Please try again.",
+          "message": "Something went wrong, Please try again.",
+          "errors": [
+            null
+          ],
+          "errorRaw": {
+            "query": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, ?, ?, ?, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, ?, ?, ?, DEFAULT, ?, ?, ?, ?, ?)",
+            "parameters": [
+              "shanthi54@gmail.com",
+              "7708051855",
+              "7708051855",
+              "Python",
+              "Female",
+              "SHANTHI",
+              "Email-Mobile",
+              true,
+              "[]",
+              "Customer",
+              "641602",
+              "Thirupur",
+              "Tamil Nadu",
+              "{\"date\":\"2026-02-24T05:57:01.701Z\",\"source\":\"External\"}",
+              "{\"date\":\"2026-02-24T05:57:01.701Z\",\"source\":\"External\"}",
+              "2026-02-24T05:57:01.711Z",
+              "2026-02-24T05:57:01.711Z"
+            ],
+            "driverError": {
+              "code": "ER_DUP_ENTRY",
+              "errno": 1062,
+              "sqlState": "23000",
+              "sqlMessage": "target: crm_prod.-.primary: vttablet: Duplicate entry 'shanthi54@gmail.com' for key 'customer.IDX_email' (errno 1062) (sqlstate 23000) (CallerID: 7066kmkcoszuvatcbk98): Sql: \"insert into customer(id, cus_id, email, mobile, alt_mobile, whatsapp_num, wedding_anniversary, source, email_verified, mobile_verified, merged_status, merged, is_business, `password`, salt, login_type, img_extension, gender, `name`, fcm_id, customer_id, online_customer_id, profile_image, created_using, account_id, blood_group, dob, doa, walk_in_ref, `status`, `language`, proofs, alt_mobile_numbers, branch, notifications, role, type, pincode, city, district, state, createdBy, updatedBy, created_at, updated_at) values (default, default, :vtg1 /* VARCHAR */, :vtg2 /* VARCHAR */, :vtg3 /* VARCHAR */, default, default, :vtg4 /* VARCHAR */, default, default, default, default, default, default, default, default, default, :vtg5 /* VARCHAR */, :vtg6 /* VARCHAR */, default, default, default, default, :vtg7 /* VARCHAR */, default, default, default, default, default, true, default, default, default, :vtg8 /* VARCHAR */, default, default, :vtg9 /* VARCHAR */, :vtg10 /* VARCHAR */, :vtg11 /* VARCHAR */, default, :vtg12 /* VARCHAR */, :vtg13 /* VARCHAR */, :vtg14 /* VARCHAR */, :vtg15 /* VARCHAR */, :vtg16 /* VARCHAR */)\", BindVars: {REDACTED}",
+              "sql": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, 'shanthi54@gmail.com', '7708051855', '7708051855', DEFAULT, DEFAULT, 'Python', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Female', 'SHANTHI', DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Email-Mobile', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, true, DEFAULT, DEFAULT, DEFAULT, '[]', DEFAULT, DEFAULT, 'Customer', '641602', 'Thirupur', DEFAULT, 'Tamil Nadu', '{\\\"date\\\":\\\"2026-02-24T05:57:01.701Z\\\",\\\"source\\\":\\\"External\\\"}', '{\\\"date\\\":\\\"2026-02-24T05:57:01.701Z\\\",\\\"source\\\":\\\"External\\\"}', '2026-02-24 05:57:01.711', '2026-02-24 05:57:01.711')"
+            },
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "sqlMessage": "target: crm_prod.-.primary: vttablet: Duplicate entry 'shanthi54@gmail.com' for key 'customer.IDX_email' (errno 1062) (sqlstate 23000) (CallerID: 7066kmkcoszuvatcbk98): Sql: \"insert into customer(id, cus_id, email, mobile, alt_mobile, whatsapp_num, wedding_anniversary, source, email_verified, mobile_verified, merged_status, merged, is_business, `password`, salt, login_type, img_extension, gender, `name`, fcm_id, customer_id, online_customer_id, profile_image, created_using, account_id, blood_group, dob, doa, walk_in_ref, `status`, `language`, proofs, alt_mobile_numbers, branch, notifications, role, type, pincode, city, district, state, createdBy, updatedBy, created_at, updated_at) values (default, default, :vtg1 /* VARCHAR */, :vtg2 /* VARCHAR */, :vtg3 /* VARCHAR */, default, default, :vtg4 /* VARCHAR */, default, default, default, default, default, default, default, default, default, :vtg5 /* VARCHAR */, :vtg6 /* VARCHAR */, default, default, default, default, :vtg7 /* VARCHAR */, default, default, default, default, default, true, default, default, default, :vtg8 /* VARCHAR */, default, default, :vtg9 /* VARCHAR */, :vtg10 /* VARCHAR */, :vtg11 /* VARCHAR */, default, :vtg12 /* VARCHAR */, :vtg13 /* VARCHAR */, :vtg14 /* VARCHAR */, :vtg15 /* VARCHAR */, :vtg16 /* VARCHAR */)\", BindVars: {REDACTED}",
+            "sql": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, 'shanthi54@gmail.com', '7708051855', '7708051855', DEFAULT, DEFAULT, 'Python', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Female', 'SHANTHI', DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Email-Mobile', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, true, DEFAULT, DEFAULT, DEFAULT, '[]', DEFAULT, DEFAULT, 'Customer', '641602', 'Thirupur', DEFAULT, 'Tamil Nadu', '{\\\"date\\\":\\\"2026-02-24T05:57:01.701Z\\\",\\\"source\\\":\\\"External\\\"}', '{\\\"date\\\":\\\"2026-02-24T05:57:01.701Z\\\",\\\"source\\\":\\\"External\\\"}', '2026-02-24 05:57:01.711', '2026-02-24 05:57:01.711')"
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "865deee7-49cb-40b6-8fcf-d23aacc71d49-ERR",
+    "timestamp": "2026-02-24 12:51:50",
+    "errors": {
+      "batch_id": "865deee7-49cb-40b6-8fcf-d23aacc71d49",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "CRM Api Failed",
+        "message": "CRM Api error produced",
+        "sent_email": "nagu12@gmail.com",
+        "sent_mobile": "6364588948",
+        "crm_status": 400,
+        "crm_response": {
+          "errorType": 400,
+          "errorMessage": "Something went wrong, Please try again.",
+          "message": "Something went wrong, Please try again.",
+          "errors": [
+            null
+          ],
+          "errorRaw": {
+            "query": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, ?, ?, ?, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, DEFAULT, ?, DEFAULT, DEFAULT, ?, ?, ?, DEFAULT, ?, ?, ?, ?, ?)",
+            "parameters": [
+              "nagu12@gmail.com",
+              "6364588948",
+              "6364588948",
+              "Python",
+              "Male",
+              "NAGU",
+              "Email-Mobile",
+              true,
+              "[]",
+              "Customer",
+              "562117",
+              "Kanakapur",
+              "Karnataka",
+              "{\"date\":\"2026-02-24T07:21:50.640Z\",\"source\":\"External\"}",
+              "{\"date\":\"2026-02-24T07:21:50.640Z\",\"source\":\"External\"}",
+              "2026-02-24T07:21:50.648Z",
+              "2026-02-24T07:21:50.648Z"
+            ],
+            "driverError": {
+              "code": "ER_DUP_ENTRY",
+              "errno": 1062,
+              "sqlState": "23000",
+              "sqlMessage": "target: crm_prod.-.primary: vttablet: Duplicate entry 'nagu12@gmail.com' for key 'customer.IDX_email' (errno 1062) (sqlstate 23000) (CallerID: 7066kmkcoszuvatcbk98): Sql: \"insert into customer(id, cus_id, email, mobile, alt_mobile, whatsapp_num, wedding_anniversary, source, email_verified, mobile_verified, merged_status, merged, is_business, `password`, salt, login_type, img_extension, gender, `name`, fcm_id, customer_id, online_customer_id, profile_image, created_using, account_id, blood_group, dob, doa, walk_in_ref, `status`, `language`, proofs, alt_mobile_numbers, branch, notifications, role, type, pincode, city, district, state, createdBy, updatedBy, created_at, updated_at) values (default, default, :vtg1 /* VARCHAR */, :vtg2 /* VARCHAR */, :vtg3 /* VARCHAR */, default, default, :vtg4 /* VARCHAR */, default, default, default, default, default, default, default, default, default, :vtg5 /* VARCHAR */, :vtg6 /* VARCHAR */, default, default, default, default, :vtg7 /* VARCHAR */, default, default, default, default, default, true, default, default, default, :vtg8 /* VARCHAR */, default, default, :vtg9 /* VARCHAR */, :vtg10 /* VARCHAR */, :vtg11 /* VARCHAR */, default, :vtg12 /* VARCHAR */, :vtg13 /* VARCHAR */, :vtg14 /* VARCHAR */, :vtg15 /* VARCHAR */, :vtg16 /* VARCHAR */)\", BindVars: {REDACTED}",
+              "sql": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, 'nagu12@gmail.com', '6364588948', '6364588948', DEFAULT, DEFAULT, 'Python', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Male', 'NAGU', DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Email-Mobile', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, true, DEFAULT, DEFAULT, DEFAULT, '[]', DEFAULT, DEFAULT, 'Customer', '562117', 'Kanakapur', DEFAULT, 'Karnataka', '{\\\"date\\\":\\\"2026-02-24T07:21:50.640Z\\\",\\\"source\\\":\\\"External\\\"}', '{\\\"date\\\":\\\"2026-02-24T07:21:50.640Z\\\",\\\"source\\\":\\\"External\\\"}', '2026-02-24 07:21:50.648', '2026-02-24 07:21:50.648')"
+            },
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "sqlMessage": "target: crm_prod.-.primary: vttablet: Duplicate entry 'nagu12@gmail.com' for key 'customer.IDX_email' (errno 1062) (sqlstate 23000) (CallerID: 7066kmkcoszuvatcbk98): Sql: \"insert into customer(id, cus_id, email, mobile, alt_mobile, whatsapp_num, wedding_anniversary, source, email_verified, mobile_verified, merged_status, merged, is_business, `password`, salt, login_type, img_extension, gender, `name`, fcm_id, customer_id, online_customer_id, profile_image, created_using, account_id, blood_group, dob, doa, walk_in_ref, `status`, `language`, proofs, alt_mobile_numbers, branch, notifications, role, type, pincode, city, district, state, createdBy, updatedBy, created_at, updated_at) values (default, default, :vtg1 /* VARCHAR */, :vtg2 /* VARCHAR */, :vtg3 /* VARCHAR */, default, default, :vtg4 /* VARCHAR */, default, default, default, default, default, default, default, default, default, :vtg5 /* VARCHAR */, :vtg6 /* VARCHAR */, default, default, default, default, :vtg7 /* VARCHAR */, default, default, default, default, default, true, default, default, default, :vtg8 /* VARCHAR */, default, default, :vtg9 /* VARCHAR */, :vtg10 /* VARCHAR */, :vtg11 /* VARCHAR */, default, :vtg12 /* VARCHAR */, :vtg13 /* VARCHAR */, :vtg14 /* VARCHAR */, :vtg15 /* VARCHAR */, :vtg16 /* VARCHAR */)\", BindVars: {REDACTED}",
+            "sql": "INSERT INTO `customer`(`id`, `cus_id`, `email`, `mobile`, `alt_mobile`, `whatsapp_num`, `wedding_anniversary`, `source`, `email_verified`, `mobile_verified`, `merged_status`, `merged`, `is_business`, `password`, `salt`, `login_type`, `img_extension`, `gender`, `name`, `fcm_id`, `customer_id`, `online_customer_id`, `profile_image`, `created_using`, `account_id`, `blood_group`, `dob`, `doa`, `walk_in_ref`, `status`, `language`, `proofs`, `alt_mobile_numbers`, `branch`, `notifications`, `role`, `type`, `pincode`, `city`, `district`, `state`, `createdBy`, `updatedBy`, `created_at`, `updated_at`) VALUES (DEFAULT, DEFAULT, 'nagu12@gmail.com', '6364588948', '6364588948', DEFAULT, DEFAULT, 'Python', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Male', 'NAGU', DEFAULT, DEFAULT, DEFAULT, DEFAULT, 'Email-Mobile', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, true, DEFAULT, DEFAULT, DEFAULT, '[]', DEFAULT, DEFAULT, 'Customer', '562117', 'Kanakapur', DEFAULT, 'Karnataka', '{\\\"date\\\":\\\"2026-02-24T07:21:50.640Z\\\",\\\"source\\\":\\\"External\\\"}', '{\\\"date\\\":\\\"2026-02-24T07:21:50.640Z\\\",\\\"source\\\":\\\"External\\\"}', '2026-02-24 07:21:50.648', '2026-02-24 07:21:50.648')"
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "0d5568a4-f397-4657-a0e2-ebe1609d2738-ERR",
+    "timestamp": "2026-02-24 13:52:54",
+    "errors": {
+      "batch_id": "0d5568a4-f397-4657-a0e2-ebe1609d2738",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_error",
+        "sent_email": "jithin12@gmail.cim",
+        "sent_mobile": "9895735406",
+        "crm_status": 400,
+        "crm_response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "JITHIN",
+              "mobile": "9895735406",
+              "gender": "Male",
+              "email": "jithin12@gmail.cim",
+              "type": "Customer",
+              "pincode": "678102",
+              "branch": "",
+              "city": "Coimbatore",
+              "state": "Tamil Nadu",
+              "alt_mobile": "9895735406",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "jithin12@gmail.cim",
+                  "invalids": [
+                    "jithin12@gmail.cim"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "e960cec9-7cd3-4bf4-8bd8-fec036ae5e1a-ERR",
+    "timestamp": "2026-02-24 13:54:44",
+    "errors": {
+      "batch_id": "e960cec9-7cd3-4bf4-8bd8-fec036ae5e1a",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_error",
+        "sent_email": "jithin12@gmail.cim",
+        "sent_mobile": "9895735406",
+        "crm_status": 400,
+        "crm_response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "JITHIN",
+              "mobile": "9895735406",
+              "gender": "Male",
+              "email": "jithin12@gmail.cim",
+              "type": "Customer",
+              "pincode": "678102",
+              "branch": "",
+              "city": "Coimbatore",
+              "state": "Tamil Nadu",
+              "alt_mobile": "9895735406",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "jithin12@gmail.cim",
+                  "invalids": [
+                    "jithin12@gmail.cim"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "cf853d7f-a20f-4e75-b013-0bc97e534d80-ERR",
+    "timestamp": "2026-02-24 14:14:28",
+    "errors": {
+      "batch_id": "cf853d7f-a20f-4e75-b013-0bc97e534d80",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_error",
+        "sent_email": "nomail.@gmail.com",
+        "sent_mobile": "8660346102",
+        "crm_status": 400,
+        "crm_response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "BIRAPPAPRABHUCHIGARER",
+              "mobile": "8660346102",
+              "gender": "Male",
+              "email": "nomail.@gmail.com",
+              "type": "Customer",
+              "pincode": "581208",
+              "branch": "",
+              "city": "Haveri",
+              "state": "Karnataka",
+              "alt_mobile": "8660346102",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "nomail.@gmail.com",
+                  "invalids": [
+                    "nomail.@gmail.com"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  }
+]

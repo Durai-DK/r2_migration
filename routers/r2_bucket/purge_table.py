@@ -1,19 +1,13 @@
 from core.creds import r2_client
 
 prefix = "mobile/"
-bucket_name = "dev-soc-media"
-
-# prefix = "imei_numbers/"
-# bucket_name = "dev-soc-media-1"
-
-# prefix = "pos_transactions/"
-# bucket_name = "dev-transaction"
+# prefix = "imei/"
+bucket_name = "pos-transaction-test"
+# bucket_name = "pos-transaction-imei-test"
 
 
 def delete_mobile_folder():
-
     r2 = r2_client()
-
     paginator = r2.get_paginator("list_objects_v2")
     total_deleted = 0
 

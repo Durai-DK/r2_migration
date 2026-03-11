@@ -1,0 +1,58 @@
+name = "pos-transaction-python"
+main = "src/worker.py"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["python_workers"]
+
+# ---------------- R2 ----------------
+[[r2_buckets]]
+binding = "POS_BUCKET_PROD"
+bucket_name = "pos-transaction"
+
+[[r2_buckets]]
+binding = "IMEI_BUCKET_PROD"
+bucket_name = "pos-transaction-imei"
+
+[[r2_buckets]]
+binding = "POS_BUCKET_DEV"
+bucket_name = "pos-transaction-test"
+
+[[r2_buckets]]
+binding = "IMEI_BUCKET_DEV"
+bucket_name = "pos-transaction-imei-test"
+
+# ---------------- KV ----------------
+[[kv_namespaces]]
+#binding = "pos-transaction-python-KV"
+binding = "POS_KV"
+id = "e67a6747878549f08531284ca972b191"
+
+# ---------------- QUEUES ----------------
+#[queues]
+
+# ---------- Producers ----------
+[[queues.producers]]
+binding = "POS_QUEUE"
+queue = "pos-transaction-python-queue"
+
+[[queues.producers]]
+binding = "POS_SUMMARY_QUEUE"
+queue = "pos-transaction-python-summary"
+
+[[queues.producers]]
+binding = "POS_DLQ"
+queue = "pos-transaction-python-dlq"
+
+# ---------- Consumers ----------
+[[queues.consumers]]
+queue = "pos-transaction-python-queue"
+max_batch_size = 5
+max_batch_timeout = 30
+
+[[queues.consumers]]
+queue = "pos-transaction-python-summary"
+max_batch_size = 5
+max_batch_timeout = 30
+
+# ---------------- LOG ( observability ) ----------------
+[observability]
+enabled = true

@@ -1,0 +1,11 @@
+.idea
+__pycache__
+.DS_Store
+*/.DS_Store
+worker_project_1
+.wrangler
+node_modules
+src_1
+src_2
+src_3
+src_4

@@ -1,0 +1,18 @@
+stages:
+  - deploy
+
+deploy-worker:
+  stage: deploy
+  image: node:21-alpine
+  tags:
+    - linode
+  variables:
+    CLOUDFLARE_API_TOKEN: $CF_API_TOKEN
+    CLOUDFLARE_ACCOUNT_ID: $CF_ACCOUNT_ID
+  script:
+    - echo "Deploying Python Cloudflare Worker..."
+    - cd src
+    - npm install -g wrangler
+    - npx wrangler deploy --var API_CRM_BASE_URL:"$API_CRM_BASE_URL" --var API_CRM_AUTH_TOKEN:"$API_CRM_AUTH_TOKEN" --var APX_SECURITY_CODE:"$APX_SECURITY_CODE" --var APX_USERID:"$APX_USERID" --var APX_API_URL:"$APX_API_URL" --var STATIC_JWT_TOKEN:"$STATIC_JWT_TOKEN" --var TOKEN_ID:"$TOKEN_ID"
+  only:
+    - dev

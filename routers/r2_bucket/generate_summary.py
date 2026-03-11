@@ -1,7 +1,7 @@
 import json, time
-from core.creds import logger, r2_client
+from core.creds import r2_client
 from concurrent.futures import ProcessPoolExecutor
-
+from logs.log_settings import error_log, success_log
 
 def read_json(bucket, key: str):
     r2 = r2_client()
@@ -10,10 +10,10 @@ def read_json(bucket, key: str):
         res = r2.get_object(Bucket=bucket, Key=key)
         return json.loads(res["Body"].read().decode("utf-8"))
     except r2.exceptions.NoSuchKey:
-        logger.error(f"❌ File not found: {key}")
+        error_log.error(f"❌ File not found: {key}")
         return None
     except Exception as e:
-        logger.error(f"❌ Error reading {key}: {e}")
+        error_log.error(f"❌ Error reading {key}: {e}")
         return None
 
 def list_json_files(bucket: str, prefix: str):
@@ -63,7 +63,7 @@ def parallel_read_json(bucket, keys, workers=4):
                 print("key", key)
                 imei_list.append(content)
             else:
-                logger.error(f"⚠️ Failed to parse IMEI file: {key}")
+                error_log.error(f"⚠️ Failed to parse IMEI file: {key}")
 
     return imei_list
 
@@ -132,7 +132,8 @@ def id_summary_fun(bucket, mobile):
     }
 
     metadata = {
-        "mobile": mobile, "records-count": str(len(records)), "total-spends": str(total_spends)}
+        "mobile": mobile, "records-count": str(len(records)), "total-spends": str(total_spends)
+    }
 
     store_json_data(bucket, id_summary, id_summary_key, metadata)
 
@@ -149,7 +150,7 @@ def store_json_data(bucket, data, key, metadata):
         else:
             raise TypeError(f"Unsupported data type for R2 upload: {type(data)}")
     except (TypeError, ValueError) as e:
-        logger.error(f"❌ JSON serialization failed for key {key}: {e}")
+        error_log.error(f"❌ JSON serialization failed for key {key}: {e}")
         raise
 
     try:
@@ -160,10 +161,10 @@ def store_json_data(bucket, data, key, metadata):
                       ContentType="application/json",
                       Metadata=metadata)
 
-        logger.info(f"✅ Stored {key} ({len(body)} bytes)")
+        error_log.info(f"✅ Stored {key} ({len(body)} bytes)")
 
     except Exception as e:
-        logger.exception(f"❌ Unexpected error storing {key}: {e}")
+        error_log.exception(f"❌ Unexpected error storing {key}: {e}")
         raise
 
 def generate_mobile_summary(bucket: str, mobile: str):

@@ -1,0 +1,39 @@
+#name = "pos-transaction-python"
+#
+#main = "src/worker.py"
+#
+#compatibility_date = "2024-09-23"
+#
+#compatibility_flags = ["python_workers"]
+#
+## R2 Bucket Binding (MUST match your R2 bucket)
+#[[r2_buckets]]
+#binding = "POS_BUCKET_PROD"
+#bucket_name = "pos-transaction"
+#
+#[[r2_buckets]]
+#binding = "IMEI_BUCKET_PROD"
+#bucket_name = "pos-transaction-imei"
+#
+#[[r2_buckets]]
+#binding = "POS_BUCKET_DEV"
+#bucket_name = "pos-transaction-test"
+#
+#[[r2_buckets]]
+#binding = "IMEI_BUCKET_DEV"
+#bucket_name = "pos-transaction-imei-test"
+#
+## Cloudflare Queue Binding (Consumer) & (Producer)
+#[queues]
+#
+#[[queues.producers]]
+#binding = "POS_QUEUE"
+#queue = "pos-transaction-python-queue"
+#
+#[[queues.consumers]]
+#queue = "pos-transaction-python-queue"
+#max_batch_size = 5
+#max_batch_timeout = 30
+#
+#[observability]
+#enabled = true

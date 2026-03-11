@@ -17,13 +17,14 @@ age_header = {"securitycode": "5382-1294-8763-3537", "userid": "poorvika"}
 
 age_url = "https://apx.poorvikamobiles.net/api/apxapi/GetImeiSerialNoCurrentStatus"
 
-pos_bucket = "dev-soc-media"
-pos_imei_bucket = "dev-soc-media-1"
+pos_bucket = "pos-transaction-test"
+pos_imei_bucket = "pos-transaction-imei-test"
 
 # pos_bucket = "pos-transaction"
 # pos_imei_bucket = "pos-transaction-imei"
 mobile_prefix = "mobile"
 imei_prefix = "imei_numbers"
+
 
 
 def error_response(code: int, message: str, error: Any):
@@ -360,9 +361,7 @@ def build_final_records(invoice, pri_id):
             "pri_id": pri_id, "type": "CRM_CUSTOMER_ERROR", "error": crm_error,
         })
 
-
     records = []
-
     for item in output_items:
         footer = footer_record_mapping(item)
 

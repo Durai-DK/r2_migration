@@ -1,246 +1,202 @@
-[2025-12-02 20:09:58,039] ERROR error_logger JSON serialization failed for key count/last_pri_id.json: Object of type datetime is not JSON serializable
-[2025-12-02 20:11:17,607] ERROR error_logger ❌ Unexpected error storing count/last_pri_id.json: 'int' object has no attribute 'encode'
-[2025-12-03 12:51:34,182] ERROR error_logger Write Conflict: Too many retries — high concurrency conflict
-[2025-12-06 17:49:40,529] ERROR error_logger ❌ Failed to create POS record
+[2025-12-10 08:42:44,740] ERROR error_logger ❌ [14695/100000] Failed for mobile 9843752651: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/urls.py", line 15, in create_record
-    pri_id = fetch_and_update_count(pos_bucket, count_key)
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/get_pri_id.py", line 30, in fetch_and_update_count
-    old_count, etag = get_count(bucket, key)
-                      ~~~~~~~~~^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/get_pri_id.py", line 18, in get_count
-    obj = r2.get_object(Bucket=bucket, Key=key)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 602, in _api_call
-    return self._make_api_call(operation_name, kwargs)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 1078, in _make_api_call
-    raise error_class(parsed_response, operation_name)
-botocore.errorfactory.NoSuchKey: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
-[2025-12-06 18:11:57,152] ERROR error_logger ❌ Failed to store R2 data crm_error_response/2.json: 'int' object has no attribute 'encode'
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 09:01:00,287] ERROR error_logger ❌ [15055/100000] Failed for mobile 7259244319: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 46, in store_json_data
-    r2.put_object(Bucket=bucket,
-    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-                  Key=key,
-                  ^^^^^^^^
-                  Body=body.encode("utf-8"),
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
-                  ContentType="application/json",
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                  Metadata=metadata or {})
-                  ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 602, in _api_call
-    return self._make_api_call(operation_name, kwargs)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 1019, in _make_api_call
-    api_params = self._emit_api_params(
-        api_params=api_params,
-        operation_model=operation_model,
-        context=request_context,
-    )
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 1138, in _emit_api_params
-    self.meta.events.emit(
-    ~~~~~~~~~~~~~~~~~~~~~^
-        f'before-parameter-build.{service_id}.{operation_name}',
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<2 lines>...
-        context=context,
-        ^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 412, in emit
-    return self._emitter.emit(aliased_event_name, **kwargs)
-           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 256, in emit
-    return self._emit(event_name, kwargs)
-           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 239, in _emit
-    response = handler(**kwargs)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/handlers.py", line 664, in validate_ascii_metadata
-    value.encode('ascii')
-    ^^^^^^^^^^^^
-AttributeError: 'int' object has no attribute 'encode'
-[2025-12-06 18:11:57,161] ERROR error_logger ❌ Failed to create POS record
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 09:01:10,954] ERROR error_logger ❌ [15059/100000] Failed for mobile 7358346835: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/urls.py", line 18, in create_record
-    push_to_bucket(invoice, pri_id)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 426, in push_to_bucket
-    store_json_data(pos_bucket, error_bucket, err_key, {"pri_id": pri_id})
-    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 46, in store_json_data
-    r2.put_object(Bucket=bucket,
-    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-                  Key=key,
-                  ^^^^^^^^
-                  Body=body.encode("utf-8"),
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
-                  ContentType="application/json",
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                  Metadata=metadata or {})
-                  ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 602, in _api_call
-    return self._make_api_call(operation_name, kwargs)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 1019, in _make_api_call
-    api_params = self._emit_api_params(
-        api_params=api_params,
-        operation_model=operation_model,
-        context=request_context,
-    )
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 1138, in _emit_api_params
-    self.meta.events.emit(
-    ~~~~~~~~~~~~~~~~~~~~~^
-        f'before-parameter-build.{service_id}.{operation_name}',
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<2 lines>...
-        context=context,
-        ^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 412, in emit
-    return self._emitter.emit(aliased_event_name, **kwargs)
-           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 256, in emit
-    return self._emit(event_name, kwargs)
-           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 239, in _emit
-    response = handler(**kwargs)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/handlers.py", line 664, in validate_ascii_metadata
-    value.encode('ascii')
-    ^^^^^^^^^^^^
-AttributeError: 'int' object has no attribute 'encode'
-[2025-12-06 18:12:53,823] ERROR error_logger ❌ Failed to store R2 data crm_error_response/2.json: 'int' object has no attribute 'encode'
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 09:14:51,556] ERROR error_logger ❌ [15321/100000] Failed for mobile 9952595793: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 46, in store_json_data
-    r2.put_object(Bucket=bucket,
-    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-                  Key=key,
-                  ^^^^^^^^
-                  Body=body.encode("utf-8"),
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
-                  ContentType="application/json",
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                  Metadata=metadata or {})
-                  ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 602, in _api_call
-    return self._make_api_call(operation_name, kwargs)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 1019, in _make_api_call
-    api_params = self._emit_api_params(
-        api_params=api_params,
-        operation_model=operation_model,
-        context=request_context,
-    )
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 1138, in _emit_api_params
-    self.meta.events.emit(
-    ~~~~~~~~~~~~~~~~~~~~~^
-        f'before-parameter-build.{service_id}.{operation_name}',
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<2 lines>...
-        context=context,
-        ^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 412, in emit
-    return self._emitter.emit(aliased_event_name, **kwargs)
-           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 256, in emit
-    return self._emit(event_name, kwargs)
-           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 239, in _emit
-    response = handler(**kwargs)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/handlers.py", line 664, in validate_ascii_metadata
-    value.encode('ascii')
-    ^^^^^^^^^^^^
-AttributeError: 'int' object has no attribute 'encode'
-[2025-12-06 18:12:53,830] ERROR error_logger ❌ Failed to create POS record
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 09:14:55,017] ERROR error_logger ❌ [15323/100000] Failed for mobile 9840030960: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/urls.py", line 18, in create_record
-    push_to_bucket(invoice, pri_id)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 426, in push_to_bucket
-    store_json_data(pos_bucket, error_bucket, err_key, {"pri_id": pri_id})
-    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 46, in store_json_data
-    r2.put_object(Bucket=bucket,
-    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-                  Key=key,
-                  ^^^^^^^^
-                  Body=body.encode("utf-8"),
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
-                  ContentType="application/json",
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                  Metadata=metadata or {})
-                  ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 602, in _api_call
-    return self._make_api_call(operation_name, kwargs)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 1019, in _make_api_call
-    api_params = self._emit_api_params(
-        api_params=api_params,
-        operation_model=operation_model,
-        context=request_context,
-    )
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/client.py", line 1138, in _emit_api_params
-    self.meta.events.emit(
-    ~~~~~~~~~~~~~~~~~~~~~^
-        f'before-parameter-build.{service_id}.{operation_name}',
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<2 lines>...
-        context=context,
-        ^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 412, in emit
-    return self._emitter.emit(aliased_event_name, **kwargs)
-           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 256, in emit
-    return self._emit(event_name, kwargs)
-           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/hooks.py", line 239, in _emit
-    response = handler(**kwargs)
-  File "/Users/DK/Desktop/Project/r2_migration/venv/lib/python3.13/site-packages/botocore/handlers.py", line 664, in validate_ascii_metadata
-    value.encode('ascii')
-    ^^^^^^^^^^^^
-AttributeError: 'int' object has no attribute 'encode'
-[2025-12-06 18:31:11,024] ERROR error_logger ❌ CRM exception
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 09:14:55,188] ERROR error_logger ❌ [15324/100000] Failed for mobile 9962344422: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 340, in crm_customer_id
-    return resp.get("errors", [{}])[0].get("customerId", ""), None
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'str' object has no attribute 'get'
-[2025-12-06 18:39:22,242] ERROR error_logger ❌ CRM exception
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 09:22:11,886] ERROR error_logger ❌ [15462/100000] Failed for mobile 9740450327: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 340, in crm_customer_id
-    return resp.get("errors", [{}])[0].get("customerId", ""), None
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'str' object has no attribute 'get'
-[2025-12-06 18:41:22,163] ERROR error_logger ❌ CRM exception
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 09:26:20,426] ERROR error_logger ❌ [15545/100000] Failed for mobile 9600935057: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 342, in crm_customer_id
-    return resp.get("errors", [{}])[0].get("customerId", ""), None
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'str' object has no attribute 'get'
-[2025-12-08 10:53:17,791] ERROR error_logger ❌ CRM exception
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 09:40:33,056] ERROR error_logger ❌ [15845/100000] Failed for mobile 9080675749: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 342, in crm_customer_id
-    return resp.get("errors", [{}])[0].get("customerId", ""), None
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'str' object has no attribute 'get'
-[2025-12-08 11:00:16,237] ERROR error_logger ❌ CRM exception
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 09:42:19,301] ERROR error_logger ❌ [15885/100000] Failed for mobile 7092514838: max_workers must be greater than 0
 Traceback (most recent call last):
-  File "/Users/DK/Desktop/Project/r2_migration/routers/transaction_post/key_mapping.py", line 342, in crm_customer_id
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 10:01:02,626] ERROR error_logger ❌ [16282/100000] Failed for mobile 8210102511: max_workers must be greater than 0
+Traceback (most recent call last):
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 10:06:43,039] ERROR error_logger ❌ [16397/100000] Failed for mobile 9663818444: max_workers must be greater than 0
+Traceback (most recent call last):
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+[2025-12-10 10:28:45,793] ERROR error_logger ❌ [16845/100000] Failed for mobile 8098320201: max_workers must be greater than 0
+Traceback (most recent call last):
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary.py", line 38, in process_mobile_range
+    result = generate_mobile_summary(bucket, mobile)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 163, in generate_mobile_summary
+    imei_summary_fun(bucket, mobile)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 100, in imei_summary_fun
+    records = parallel_read_json(bucket, imei_files, workers=workers_count)
+  File "/Users/DK/Desktop/Project/r2_migration/Summary_Generation/mobile_summary_form.py", line 60, in parallel_read_json
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 148, in __init__
+    raise ValueError("max_workers must be greater than 0")
+ValueError: max_workers must be greater than 0
+
+[2025-12-15 16:42:08,223] ERROR error_logger ❌ CRM exception
+Traceback (most recent call last):
+  File "/Users/DK/Desktop/Project/r2_migration/routers/Pos_Transaction/pos_creation.py", line 214, in crm_customer_id
     return resp.get("errors", [{}])[0].get("customerId", ""), None
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'str' object has no attribute 'get'

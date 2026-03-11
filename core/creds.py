@@ -167,3 +167,34 @@ class MysqlCatalog:
             self.cursor.close()
         if self.conn:
             self.conn.close()
+
+def fetch_batch_mobiles(mobile_list):
+    conn = mysql_connect()
+    if not conn:
+        return []
+
+    cursor = None
+    try:
+        cursor = conn.cursor(dictionary=True)
+
+        if not mobile_list:
+            return []
+
+        # Create placeholders for the IN clause
+        placeholders = ', '.join(['%s'] * len(mobile_list))
+        query = f"""
+                    SELECT * FROM `Transaction`
+                    WHERE customer_mobile__c IN ({placeholders});
+                """
+
+        cursor.execute(query, tuple(mobile_list))
+        return cursor.fetchall()
+
+    except Error as e:
+        error_log.error(f"❌ Batch Query Error: {e}")
+        return []
+
+    finally:
+        if cursor:
+            cursor.close()
+        conn.close()

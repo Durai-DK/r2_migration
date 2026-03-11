@@ -1,0 +1,1778 @@
+[
+  {
+    "pri_id": "00f013f3-2dfa-4cd6-ac36-da1a52218680-ERR",
+    "timestamp": "2026-02-23 13:39:48",
+    "errors": {
+      "batch_id": "00f013f3-2dfa-4cd6-ac36-da1a52218680",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "30707b20-461c-4b0a-9dbd-5eb7db5cf6c0-ERR",
+    "timestamp": "2026-02-23 15:48:33",
+    "errors": {
+      "batch_id": "30707b20-461c-4b0a-9dbd-5eb7db5cf6c0",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "3296aa2f-c5bf-4019-bee3-33ba5b8c3c1e-ERR",
+    "timestamp": "2026-02-23 12:01:57",
+    "errors": {
+      "batch_id": "3296aa2f-c5bf-4019-bee3-33ba5b8c3c1e",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "02fbc5bf-f70d-4263-8be0-4666c5663bd7-ERR",
+    "timestamp": "2026-02-23 12:36:30",
+    "errors": {
+      "batch_id": "02fbc5bf-f70d-4263-8be0-4666c5663bd7",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "0a8c182f-b9d3-4059-a774-b50de95c64fa-ERR",
+    "timestamp": "2026-02-23 15:22:53",
+    "errors": {
+      "batch_id": "0a8c182f-b9d3-4059-a774-b50de95c64fa",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "2d5dc126-092d-4136-9d7c-583546a23c31-ERR",
+    "timestamp": "2026-02-23 14:12:07",
+    "errors": {
+      "batch_id": "2d5dc126-092d-4136-9d7c-583546a23c31",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "12e3bac0-28c5-4d2a-8e86-c034f52f9b6b-ERR",
+    "timestamp": "2026-02-23 12:51:48",
+    "errors": {
+      "batch_id": "12e3bac0-28c5-4d2a-8e86-c034f52f9b6b",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "26c984bf-675e-4b9f-a53c-e41dbb7ec2ba-ERR",
+    "timestamp": "2026-02-23 10:59:28",
+    "errors": {
+      "batch_id": "26c984bf-675e-4b9f-a53c-e41dbb7ec2ba",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "UMESH",
+              "mobile": "7061667427",
+              "gender": "Male",
+              "email": "umesh852gmail.com",
+              "type": "Customer",
+              "pincode": "600020",
+              "branch": "",
+              "city": "Chennai",
+              "state": "Tamil Nadu",
+              "alt_mobile": "7061667427",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "umesh852gmail.com",
+                  "invalids": [
+                    "umesh852gmail.com"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "019b6acf-8683-4cf5-801f-9de9f5c9b132-ERR",
+    "timestamp": "2026-02-23 13:47:12",
+    "errors": {
+      "batch_id": "019b6acf-8683-4cf5-801f-9de9f5c9b132",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "2aa35d08-e817-4300-8f85-592d024e8ce8-ERR",
+    "timestamp": "2026-02-23 16:14:30",
+    "errors": {
+      "batch_id": "2aa35d08-e817-4300-8f85-592d024e8ce8",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "1dfe6b2a-3ddb-4f8d-acdd-f030d0944a97-ERR",
+    "timestamp": "2026-02-23 17:21:36",
+    "errors": {
+      "batch_id": "1dfe6b2a-3ddb-4f8d-acdd-f030d0944a97",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "mobile length must be 10 characters long",
+          "message": "mobile length must be 10 characters long",
+          "errors": [
+            "mobile length must be 10 characters long"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "SAKTHIVEL",
+              "mobile": "9976777653.",
+              "gender": "Others",
+              "email": "",
+              "type": "Customer",
+              "pincode": "641004",
+              "branch": "",
+              "city": "Coimbatore",
+              "state": "Tamil Nadu",
+              "alt_mobile": "9976777653.",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"mobile\" length must be 10 characters long",
+                "path": [
+                  "mobile"
+                ],
+                "type": "string.length",
+                "context": {
+                  "limit": 10,
+                  "value": "9976777653.",
+                  "label": "mobile",
+                  "key": "mobile"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "12f8b9cf-2819-45c5-8760-abf3fb9a0fec-ERR",
+    "timestamp": "2026-02-23 15:09:14",
+    "errors": {
+      "batch_id": "12f8b9cf-2819-45c5-8760-abf3fb9a0fec",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "0c994715-fa4c-4132-98de-f83353f96fe9-ERR",
+    "timestamp": "2026-02-23 17:05:01",
+    "errors": {
+      "batch_id": "0c994715-fa4c-4132-98de-f83353f96fe9",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "0f33d1a7-5567-432d-88ad-18ddbb3f53bb-ERR",
+    "timestamp": "2026-02-23 17:24:40",
+    "errors": {
+      "batch_id": "0f33d1a7-5567-432d-88ad-18ddbb3f53bb",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "12e3729a-e746-4d60-81a5-d882e49cf2a7-ERR",
+    "timestamp": "2026-02-23 14:41:00",
+    "errors": {
+      "batch_id": "12e3729a-e746-4d60-81a5-d882e49cf2a7",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "1cd2e81a-1e41-45d1-99f1-d001a1215ed5-ERR",
+    "timestamp": "2026-02-23 13:08:05",
+    "errors": {
+      "batch_id": "1cd2e81a-1e41-45d1-99f1-d001a1215ed5",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "27752cb6-163c-443c-a542-a5b3261cb947-ERR",
+    "timestamp": "2026-02-23 12:31:07",
+    "errors": {
+      "batch_id": "27752cb6-163c-443c-a542-a5b3261cb947",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "09a0be8b-0ba2-43a6-beca-463fbcf8b36d-ERR",
+    "timestamp": "2026-02-23 11:49:15",
+    "errors": {
+      "batch_id": "09a0be8b-0ba2-43a6-beca-463fbcf8b36d",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "124dbb57-86af-4355-b28c-06730e3db29c-ERR",
+    "timestamp": "2026-02-23 14:59:11",
+    "errors": {
+      "batch_id": "124dbb57-86af-4355-b28c-06730e3db29c",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "2fb6b992-0285-42b3-b06b-4a33fa441295-ERR",
+    "timestamp": "2026-02-23 14:23:08",
+    "errors": {
+      "batch_id": "2fb6b992-0285-42b3-b06b-4a33fa441295",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "16fa4ff3-4597-4ae4-8ee0-b2974e5e9bc6-ERR",
+    "timestamp": "2026-02-23 13:08:52",
+    "errors": {
+      "batch_id": "16fa4ff3-4597-4ae4-8ee0-b2974e5e9bc6",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "29b23315-9281-4e9d-b2e2-d036beed9b6e-ERR",
+    "timestamp": "2026-02-23 14:03:48",
+    "errors": {
+      "batch_id": "29b23315-9281-4e9d-b2e2-d036beed9b6e",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "3312b637-5fa8-4ec3-bd22-2232ab927759-ERR",
+    "timestamp": "2026-02-23 11:34:14",
+    "errors": {
+      "batch_id": "3312b637-5fa8-4ec3-bd22-2232ab927759",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "LOGESHR",
+              "mobile": "7339351054",
+              "gender": "Male",
+              "email": "logesh125gmail.com",
+              "type": "Customer",
+              "pincode": "605602",
+              "branch": "",
+              "city": "Villupuram",
+              "state": "Tamil Nadu",
+              "alt_mobile": "7339351054",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "logesh125gmail.com",
+                  "invalids": [
+                    "logesh125gmail.com"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "446afffc-941a-48da-aaae-afa898383535-ERR",
+    "timestamp": "2026-02-23 13:21:00",
+    "errors": {
+      "batch_id": "446afffc-941a-48da-aaae-afa898383535",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "3afcf60b-15e6-463c-8baa-866b90792b4f-ERR",
+    "timestamp": "2026-02-23 12:16:16",
+    "errors": {
+      "batch_id": "3afcf60b-15e6-463c-8baa-866b90792b4f",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "38bbc50b-7e90-477c-8598-6dd737dc8109-ERR",
+    "timestamp": "2026-02-23 13:46:33",
+    "errors": {
+      "batch_id": "38bbc50b-7e90-477c-8598-6dd737dc8109",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "santhakumar.m",
+              "mobile": "8056038121",
+              "gender": "Male",
+              "email": "santhakumar212@gmail.cim",
+              "type": "Customer",
+              "pincode": "600030",
+              "branch": "",
+              "city": "Chennai",
+              "state": "Tamil Nadu",
+              "alt_mobile": "8056038121",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "santhakumar212@gmail.cim",
+                  "invalids": [
+                    "santhakumar212@gmail.cim"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "5362f2dc-b497-47c1-bd7c-7631418c731d-ERR",
+    "timestamp": "2026-02-23 14:09:57",
+    "errors": {
+      "batch_id": "5362f2dc-b497-47c1-bd7c-7631418c731d",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "480b8787-de62-4aa1-9564-223a6eefe10b-ERR",
+    "timestamp": "2026-02-23 17:25:41",
+    "errors": {
+      "batch_id": "480b8787-de62-4aa1-9564-223a6eefe10b",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "46bc1b95-162a-4dcd-bf5c-0b30df69def8-ERR",
+    "timestamp": "2026-02-23 17:27:24",
+    "errors": {
+      "batch_id": "46bc1b95-162a-4dcd-bf5c-0b30df69def8",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "5b650c0e-2f14-41fb-a0c1-f881333560d4-ERR",
+    "timestamp": "2026-02-23 12:33:16",
+    "errors": {
+      "batch_id": "5b650c0e-2f14-41fb-a0c1-f881333560d4",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "5db48ce0-b9e0-43e9-b257-26f5d79a1334-ERR",
+    "timestamp": "2026-02-23 12:53:42",
+    "errors": {
+      "batch_id": "5db48ce0-b9e0-43e9-b257-26f5d79a1334",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "5e2e43a0-04e6-462a-81d3-15bd7c9b796e-ERR",
+    "timestamp": "2026-02-23 15:33:25",
+    "errors": {
+      "batch_id": "5e2e43a0-04e6-462a-81d3-15bd7c9b796e",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "469a73d7-5558-4479-ab34-1f8e2287835c-ERR",
+    "timestamp": "2026-02-23 12:52:12",
+    "errors": {
+      "batch_id": "469a73d7-5558-4479-ab34-1f8e2287835c",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "VEIUMALAI",
+              "mobile": "9994012518",
+              "gender": "Male",
+              "email": "elumalai@518",
+              "type": "Customer",
+              "pincode": "600095",
+              "branch": "",
+              "city": "Chennai",
+              "state": "Tamil Nadu",
+              "alt_mobile": "9994012518",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "elumalai@518",
+                  "invalids": [
+                    "elumalai@518"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "619838fe-c30c-4385-8dd7-ecaf894f9e1d-ERR",
+    "timestamp": "2026-02-23 11:13:35",
+    "errors": {
+      "batch_id": "619838fe-c30c-4385-8dd7-ecaf894f9e1d",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_exception",
+        "message": "SyntaxError: Unexpected token 'S', \"Service Unavailable\" is not valid JSON"
+      }
+    }
+  },
+  {
+    "pri_id": "4d57488b-798e-4f9b-9df9-130493d53103-ERR",
+    "timestamp": "2026-02-23 17:20:03",
+    "errors": {
+      "batch_id": "4d57488b-798e-4f9b-9df9-130493d53103",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "55da9e0e-c032-4802-96b9-67ad5d7d3201-ERR",
+    "timestamp": "2026-02-23 11:21:09",
+    "errors": {
+      "batch_id": "55da9e0e-c032-4802-96b9-67ad5d7d3201",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "56f6f00e-54c7-47de-be2e-6ae96914b537-ERR",
+    "timestamp": "2026-02-23 13:24:27",
+    "errors": {
+      "batch_id": "56f6f00e-54c7-47de-be2e-6ae96914b537",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "61adf909-343a-4a21-ad38-15a0277d2944-ERR",
+    "timestamp": "2026-02-23 14:06:08",
+    "errors": {
+      "batch_id": "61adf909-343a-4a21-ad38-15a0277d2944",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "70ab8914-d13f-4c71-a2c0-51ecf9cd2685-ERR",
+    "timestamp": "2026-02-23 11:13:35",
+    "errors": {
+      "batch_id": "70ab8914-d13f-4c71-a2c0-51ecf9cd2685",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_exception",
+        "message": "SyntaxError: Unexpected token 'S', \"Service Unavailable\" is not valid JSON"
+      }
+    }
+  },
+  {
+    "pri_id": "69c3217d-35bc-42c0-ac6a-e1ceb28617e4-ERR",
+    "timestamp": "2026-02-23 13:41:26",
+    "errors": {
+      "batch_id": "69c3217d-35bc-42c0-ac6a-e1ceb28617e4",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "6f3630f0-292b-4018-a52f-5f20d93f1509-ERR",
+    "timestamp": "2026-02-23 16:49:39",
+    "errors": {
+      "batch_id": "6f3630f0-292b-4018-a52f-5f20d93f1509",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "73a5726c-e349-4d2b-b021-051f1d6688b4-ERR",
+    "timestamp": "2026-02-23 12:54:29",
+    "errors": {
+      "batch_id": "73a5726c-e349-4d2b-b021-051f1d6688b4",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "736f1984-3f51-4781-863b-06ae8f2ef2de-ERR",
+    "timestamp": "2026-02-23 15:34:08",
+    "errors": {
+      "batch_id": "736f1984-3f51-4781-863b-06ae8f2ef2de",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "7675a070-f954-44c6-9c03-5b287baf1b4b-ERR",
+    "timestamp": "2026-02-23 15:07:18",
+    "errors": {
+      "batch_id": "7675a070-f954-44c6-9c03-5b287baf1b4b",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "795a6b38-5ef3-43be-903d-9b7377e023b6-ERR",
+    "timestamp": "2026-02-23 15:05:30",
+    "errors": {
+      "batch_id": "795a6b38-5ef3-43be-903d-9b7377e023b6",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "70beca01-90f3-4743-a2e9-65f83c313751-ERR",
+    "timestamp": "2026-02-23 11:13:35",
+    "errors": {
+      "batch_id": "70beca01-90f3-4743-a2e9-65f83c313751",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_exception",
+        "message": "SyntaxError: Unexpected token 'S', \"Service Unavailable\" is not valid JSON"
+      }
+    }
+  },
+  {
+    "pri_id": "797c7326-8538-4a06-9da9-68109d43a480-ERR",
+    "timestamp": "2026-02-23 12:23:12",
+    "errors": {
+      "batch_id": "797c7326-8538-4a06-9da9-68109d43a480",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "7f23c6d1-f412-4fa7-b0d8-a577b97cfc23-ERR",
+    "timestamp": "2026-02-23 15:32:22",
+    "errors": {
+      "batch_id": "7f23c6d1-f412-4fa7-b0d8-a577b97cfc23",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "8bfb3365-f26b-4c96-9994-941eff831ecd-ERR",
+    "timestamp": "2026-02-23 15:13:50",
+    "errors": {
+      "batch_id": "8bfb3365-f26b-4c96-9994-941eff831ecd",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "78718e38-1682-4733-8edd-76518c707f04-ERR",
+    "timestamp": "2026-02-23 17:21:12",
+    "errors": {
+      "batch_id": "78718e38-1682-4733-8edd-76518c707f04",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "8fc5e84b-a7eb-464c-b000-ac57e870da3b-ERR",
+    "timestamp": "2026-02-23 12:31:59",
+    "errors": {
+      "batch_id": "8fc5e84b-a7eb-464c-b000-ac57e870da3b",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "7304bea3-2296-4e48-884c-6919fbd6b767-ERR",
+    "timestamp": "2026-02-23 15:33:25",
+    "errors": {
+      "batch_id": "7304bea3-2296-4e48-884c-6919fbd6b767",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "92751104-edbc-4eb4-8d41-bddbca473a2c-ERR",
+    "timestamp": "2026-02-23 11:58:41",
+    "errors": {
+      "batch_id": "92751104-edbc-4eb4-8d41-bddbca473a2c",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "8a3eb3d0-f99e-40f3-a284-827c8d8f815c-ERR",
+    "timestamp": "2026-02-23 14:16:56",
+    "errors": {
+      "batch_id": "8a3eb3d0-f99e-40f3-a284-827c8d8f815c",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "7da0ac4a-a0a0-414d-9e08-5590fd096f6a-ERR",
+    "timestamp": "2026-02-23 14:40:01",
+    "errors": {
+      "batch_id": "7da0ac4a-a0a0-414d-9e08-5590fd096f6a",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "7d319bf1-676f-45c0-ab51-92cff59cb0b0-ERR",
+    "timestamp": "2026-02-23 12:43:15",
+    "errors": {
+      "batch_id": "7d319bf1-676f-45c0-ab51-92cff59cb0b0",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "7cf2c331-907d-43a0-831d-fb1e2082da35-ERR",
+    "timestamp": "2026-02-23 12:29:14",
+    "errors": {
+      "batch_id": "7cf2c331-907d-43a0-831d-fb1e2082da35",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "5dc78d76-4ba1-48b1-a965-7b80f8138e03-ERR",
+    "timestamp": "2026-02-23 16:13:01",
+    "errors": {
+      "batch_id": "5dc78d76-4ba1-48b1-a965-7b80f8138e03",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "96176310-2eaf-4cf2-9250-977f64377782-ERR",
+    "timestamp": "2026-02-23 16:12:33",
+    "errors": {
+      "batch_id": "96176310-2eaf-4cf2-9250-977f64377782",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "90ddae85-e23c-4d55-a8db-f28a5a2cae08-ERR",
+    "timestamp": "2026-02-23 11:14:10",
+    "errors": {
+      "batch_id": "90ddae85-e23c-4d55-a8db-f28a5a2cae08",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "8d361ee7-fe16-47cd-8791-84181113f013-ERR",
+    "timestamp": "2026-02-23 15:05:09",
+    "errors": {
+      "batch_id": "8d361ee7-fe16-47cd-8791-84181113f013",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "92e6fb9a-7e17-4dd4-adfc-df84ff5a0fb6-ERR",
+    "timestamp": "2026-02-23 17:04:00",
+    "errors": {
+      "batch_id": "92e6fb9a-7e17-4dd4-adfc-df84ff5a0fb6",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "9864a198-7bb9-41da-9e4d-59a8de125fbc-ERR",
+    "timestamp": "2026-02-23 14:40:38",
+    "errors": {
+      "batch_id": "9864a198-7bb9-41da-9e4d-59a8de125fbc",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "9b8aed95-18e0-404d-8299-2dfbe835ff30-ERR",
+    "timestamp": "2026-02-23 15:34:08",
+    "errors": {
+      "batch_id": "9b8aed95-18e0-404d-8299-2dfbe835ff30",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "98629f9a-d28e-4a21-88ea-c7d0c81e9077-ERR",
+    "timestamp": "2026-02-23 14:41:02",
+    "errors": {
+      "batch_id": "98629f9a-d28e-4a21-88ea-c7d0c81e9077",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "98e47e44-678f-4b0d-b6f0-4d25d4eb1cf9-ERR",
+    "timestamp": "2026-02-23 14:19:06",
+    "errors": {
+      "batch_id": "98e47e44-678f-4b0d-b6f0-4d25d4eb1cf9",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "9ab708c2-7e44-4a0a-8fa6-a665fc61bf9d-ERR",
+    "timestamp": "2026-02-23 13:48:53",
+    "errors": {
+      "batch_id": "9ab708c2-7e44-4a0a-8fa6-a665fc61bf9d",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "aba05bae-9d10-45e8-8ca7-50af6498e901-ERR",
+    "timestamp": "2026-02-23 11:02:10",
+    "errors": {
+      "batch_id": "aba05bae-9d10-45e8-8ca7-50af6498e901",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "UMESH",
+              "mobile": "7061667427",
+              "gender": "Male",
+              "email": "umesh852gmail.com",
+              "type": "Customer",
+              "pincode": "600020",
+              "branch": "",
+              "city": "Chennai",
+              "state": "Tamil Nadu",
+              "alt_mobile": "7061667427",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "umesh852gmail.com",
+                  "invalids": [
+                    "umesh852gmail.com"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "9febf937-2827-4e06-bb31-8eaa0e09597c-ERR",
+    "timestamp": "2026-02-23 15:21:09",
+    "errors": {
+      "batch_id": "9febf937-2827-4e06-bb31-8eaa0e09597c",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "name is not allowed to be empty",
+          "message": "name is not allowed to be empty",
+          "errors": [
+            "name is not allowed to be empty"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "",
+              "mobile": "",
+              "gender": "",
+              "email": "",
+              "type": "Customer",
+              "pincode": "",
+              "branch": "",
+              "city": "",
+              "state": "",
+              "alt_mobile": "",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"name\" is not allowed to be empty",
+                "path": [
+                  "name"
+                ],
+                "type": "string.empty",
+                "context": {
+                  "label": "name",
+                  "value": "",
+                  "key": "name"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "a72b4a3f-6864-452a-bc0e-70ab4db25e64-ERR",
+    "timestamp": "2026-02-23 12:21:36",
+    "errors": {
+      "batch_id": "a72b4a3f-6864-452a-bc0e-70ab4db25e64",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "a54b5b0d-f344-45aa-a9fc-3ac972dd3f10-ERR",
+    "timestamp": "2026-02-23 13:22:09",
+    "errors": {
+      "batch_id": "a54b5b0d-f344-45aa-a9fc-3ac972dd3f10",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "73b97502-b029-4e64-b67b-c819e9e64e4c-ERR",
+    "timestamp": "2026-02-23 14:04:52",
+    "errors": {
+      "batch_id": "73b97502-b029-4e64-b67b-c819e9e64e4c",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "b67b3a54-ad40-4960-86ae-033386c7480d-ERR",
+    "timestamp": "2026-02-23 12:51:46",
+    "errors": {
+      "batch_id": "b67b3a54-ad40-4960-86ae-033386c7480d",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "973497c1-e578-4cbf-a604-6a785d0bd9fd-ERR",
+    "timestamp": "2026-02-23 11:49:50",
+    "errors": {
+      "batch_id": "973497c1-e578-4cbf-a604-6a785d0bd9fd",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "b4646d4e-1e8e-4bf4-a4f0-62b3a760fea7-ERR",
+    "timestamp": "2026-02-23 12:37:55",
+    "errors": {
+      "batch_id": "b4646d4e-1e8e-4bf4-a4f0-62b3a760fea7",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "a050d4e2-ce1c-4415-946b-bc21765a110f-ERR",
+    "timestamp": "2026-02-23 14:44:51",
+    "errors": {
+      "batch_id": "a050d4e2-ce1c-4415-946b-bc21765a110f",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "abc8beb0-d103-4578-b0a3-61f5d610b110-ERR",
+    "timestamp": "2026-02-23 14:10:33",
+    "errors": {
+      "batch_id": "abc8beb0-d103-4578-b0a3-61f5d610b110",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "b1839dc0-4267-4d9c-af87-e620f56878df-ERR",
+    "timestamp": "2026-02-23 14:12:07",
+    "errors": {
+      "batch_id": "b1839dc0-4267-4d9c-af87-e620f56878df",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "ba94b5e7-5de9-446c-949c-ff3969afbf34-ERR",
+    "timestamp": "2026-02-23 12:39:50",
+    "errors": {
+      "batch_id": "ba94b5e7-5de9-446c-949c-ff3969afbf34",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "c20f97bb-cd75-4c4e-ae1e-90d8904791c8-ERR",
+    "timestamp": "2026-02-23 14:38:29",
+    "errors": {
+      "batch_id": "c20f97bb-cd75-4c4e-ae1e-90d8904791c8",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "bddbe645-6ecc-4311-96fd-50b2147120ee-ERR",
+    "timestamp": "2026-02-23 17:49:42",
+    "errors": {
+      "batch_id": "bddbe645-6ecc-4311-96fd-50b2147120ee",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "cb19b73d-b893-445d-ac5e-2846e37ca0da-ERR",
+    "timestamp": "2026-02-23 15:19:19",
+    "errors": {
+      "batch_id": "cb19b73d-b893-445d-ac5e-2846e37ca0da",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "c92ae52f-90d9-462e-a06f-6280e003db0a-ERR",
+    "timestamp": "2026-02-23 11:36:04",
+    "errors": {
+      "batch_id": "c92ae52f-90d9-462e-a06f-6280e003db0a",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "LOGESHR",
+              "mobile": "7339351054",
+              "gender": "Male",
+              "email": "logesh125gmail.com",
+              "type": "Customer",
+              "pincode": "605602",
+              "branch": "",
+              "city": "Villupuram",
+              "state": "Tamil Nadu",
+              "alt_mobile": "7339351054",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "logesh125gmail.com",
+                  "invalids": [
+                    "logesh125gmail.com"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "c960ef5f-d886-4686-a104-91a302dc2505-ERR",
+    "timestamp": "2026-02-23 11:42:25",
+    "errors": {
+      "batch_id": "c960ef5f-d886-4686-a104-91a302dc2505",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "cb45eef8-2186-4f00-8ce4-37c953640d6b-ERR",
+    "timestamp": "2026-02-23 12:35:20",
+    "errors": {
+      "batch_id": "cb45eef8-2186-4f00-8ce4-37c953640d6b",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "c524e443-e354-494b-b66f-071cea2640fd-ERR",
+    "timestamp": "2026-02-23 12:14:47",
+    "errors": {
+      "batch_id": "c524e443-e354-494b-b66f-071cea2640fd",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "d2e8f011-e370-4f1a-aa21-8881f3ac1b2b-ERR",
+    "timestamp": "2026-02-23 12:52:09",
+    "errors": {
+      "batch_id": "d2e8f011-e370-4f1a-aa21-8881f3ac1b2b",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "e17cd49d-c63e-4fbd-a60b-3ff5802d2574-ERR",
+    "timestamp": "2026-02-23 13:16:45",
+    "errors": {
+      "batch_id": "e17cd49d-c63e-4fbd-a60b-3ff5802d2574",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "d9878b40-9005-4e16-be3f-e55901f2cfbd-ERR",
+    "timestamp": "2026-02-23 15:38:10",
+    "errors": {
+      "batch_id": "d9878b40-9005-4e16-be3f-e55901f2cfbd",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "df6ff9b8-a056-44d4-a4af-44b613e07e1b-ERR",
+    "timestamp": "2026-02-23 12:03:54",
+    "errors": {
+      "batch_id": "df6ff9b8-a056-44d4-a4af-44b613e07e1b",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "cfb9fa78-20ca-4438-aa99-1d446d84cdcb-ERR",
+    "timestamp": "2026-02-23 13:31:24",
+    "errors": {
+      "batch_id": "cfb9fa78-20ca-4438-aa99-1d446d84cdcb",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "dda4342b-65a3-4ba4-89ce-2f278e1ca39e-ERR",
+    "timestamp": "2026-02-23 12:53:40",
+    "errors": {
+      "batch_id": "dda4342b-65a3-4ba4-89ce-2f278e1ca39e",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "VEIUMALAI",
+              "mobile": "9994012518",
+              "gender": "Male",
+              "email": "elumalai@518",
+              "type": "Customer",
+              "pincode": "600095",
+              "branch": "",
+              "city": "Chennai",
+              "state": "Tamil Nadu",
+              "alt_mobile": "9994012518",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "elumalai@518",
+                  "invalids": [
+                    "elumalai@518"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "e2733a47-f4a1-40f8-9b05-01e036ea90af-ERR",
+    "timestamp": "2026-02-23 14:12:07",
+    "errors": {
+      "batch_id": "e2733a47-f4a1-40f8-9b05-01e036ea90af",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm",
+        "status": 400,
+        "response": {
+          "errorType": 400,
+          "errorMessage": "email must be a valid email",
+          "message": "email must be a valid email",
+          "errors": [
+            "email must be a valid email"
+          ],
+          "errorRaw": {
+            "_original": {
+              "name": "ChandruS",
+              "mobile": "6383286976",
+              "gender": "Male",
+              "email": "chandru122gmail.com",
+              "type": "Customer",
+              "pincode": "605103",
+              "branch": "",
+              "city": "Villupuram",
+              "state": "Tamil Nadu",
+              "alt_mobile": "6383286976",
+              "source": "Python",
+              "status": true
+            },
+            "details": [
+              {
+                "message": "\"email\" must be a valid email",
+                "path": [
+                  "email"
+                ],
+                "type": "string.email",
+                "context": {
+                  "value": "chandru122gmail.com",
+                  "invalids": [
+                    "chandru122gmail.com"
+                  ],
+                  "label": "email",
+                  "key": "email"
+                }
+              }
+            ]
+          },
+          "errorsValidation": null,
+          "status": 400
+        }
+      }
+    }
+  },
+  {
+    "pri_id": "d70f9a4b-2d6c-4fe3-b49a-9eea2b1804b0-ERR",
+    "timestamp": "2026-02-23 14:04:00",
+    "errors": {
+      "batch_id": "d70f9a4b-2d6c-4fe3-b49a-9eea2b1804b0",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "e30b8e5c-3cac-4460-9d2e-dd92f88f5678-ERR",
+    "timestamp": "2026-02-23 15:32:44",
+    "errors": {
+      "batch_id": "e30b8e5c-3cac-4460-9d2e-dd92f88f5678",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "e6e58104-f893-4fb8-b9e3-0f0c4178df1b-ERR",
+    "timestamp": "2026-02-23 15:42:17",
+    "errors": {
+      "batch_id": "e6e58104-f893-4fb8-b9e3-0f0c4178df1b",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "e7b8aad7-b2a2-4aca-ac33-90c20bcf72b8-ERR",
+    "timestamp": "2026-02-23 15:35:22",
+    "errors": {
+      "batch_id": "e7b8aad7-b2a2-4aca-ac33-90c20bcf72b8",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "e723d7fa-7d68-4c4a-8988-30e6435221ef-ERR",
+    "timestamp": "2026-02-23 14:27:07",
+    "errors": {
+      "batch_id": "e723d7fa-7d68-4c4a-8988-30e6435221ef",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "ddb4c9e7-b0c8-4310-abf7-5f5985c16e03-ERR",
+    "timestamp": "2026-02-23 11:40:04",
+    "errors": {
+      "batch_id": "ddb4c9e7-b0c8-4310-abf7-5f5985c16e03",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "e1f9241d-6109-4ce1-8971-fff0fdcff6ad-ERR",
+    "timestamp": "2026-02-23 12:43:32",
+    "errors": {
+      "batch_id": "e1f9241d-6109-4ce1-8971-fff0fdcff6ad",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "c625fe7d-0dda-4ee9-93a2-caff20c729c0-ERR",
+    "timestamp": "2026-02-23 11:13:35",
+    "errors": {
+      "batch_id": "c625fe7d-0dda-4ee9-93a2-caff20c729c0",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_exception",
+        "message": "SyntaxError: Unexpected token 'S', \"Service Unavailable\" is not valid JSON"
+      }
+    }
+  },
+  {
+    "pri_id": "ec6171b0-bdd6-4b49-97e8-71d109a63c2d-ERR",
+    "timestamp": "2026-02-23 17:18:54",
+    "errors": {
+      "batch_id": "ec6171b0-bdd6-4b49-97e8-71d109a63c2d",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "e9f54dd0-1a7e-4281-af59-9e4fdfb142ef-ERR",
+    "timestamp": "2026-02-23 15:38:08",
+    "errors": {
+      "batch_id": "e9f54dd0-1a7e-4281-af59-9e4fdfb142ef",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "f0e246f5-14e6-43a7-99a2-3ad4724dc79a-ERR",
+    "timestamp": "2026-02-23 13:54:41",
+    "errors": {
+      "batch_id": "f0e246f5-14e6-43a7-99a2-3ad4724dc79a",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  },
+  {
+    "pri_id": "f9ec1406-9512-4ea3-98f8-de9541ec69f3-ERR",
+    "timestamp": "2026-02-23 12:53:22",
+    "errors": {
+      "batch_id": "f9ec1406-9512-4ea3-98f8-de9541ec69f3",
+      "type": "CRM_CUSTOMER_ERROR",
+      "error": {
+        "stage": "crm_duplicate",
+        "message": "Duplicate Customer Entry (Email/Mobile likely exists)",
+        "details": "CRM did not return pre-existing cus_id"
+      }
+    }
+  }
+]
